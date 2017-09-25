@@ -21,25 +21,43 @@ estructuraDinamica::estructuraDinamica()
 	inici->dada = 0; 
 }
 
+//estructuraDinamica::~estructuraDinamica()
+//{
+//	allibera();
+//}
 
 void estructuraDinamica::AfegirFinal(int i)
 {
-    node * aux = inici;
-    inici->dada = i;
-    while(aux->dada != 0)
-        aux = aux->seguent;
-    node * p = new node;
-    p->seguent = NULL;
-    p->dada = i;
+    node *nou = new node(i);
+
+    if (inici == final)
+        inici = nou;
+    else
+    {
+        node * aux = inici;
+        while(aux->seguent->dada != 0)
+            aux = aux->seguent;
+        aux->seguent = nou;
+    }
+    nou->seguent = final;
 }
 
-void estructuraDinamica::Llistar() const {
- node * p = inici;
+void estructuraDinamica::Llistar() const
+{
+     node * p = inici;
 
- while (p != final)  {
-     cout << p->dada << " ";
-     p = p->seguent;
- }
- cout << "S:" << p->dada << endl; // llista el sentinella
+     while (p != final)  {
+         cout << p->dada << " ";
+         p = p->seguent;
+     }
+     cout << "S:" << p->dada << endl; // llista el sentinella
 }
+
+//void estructuraDinamica::allibera()
+//{
+//    node * aux = inici;
+//    while (aux->seguent != final)
+//        delete aux;
+//    delete final;
+//}
 

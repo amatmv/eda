@@ -23,12 +23,18 @@ struct node
 {
     int dada;
     node *seguent;
+    node():
+            dada(0), seguent(NULL){}
+    node(int i):
+            dada(i), seguent(NULL){}
 };
 
 class estructuraDinamica  // Final
 {
     node * inici;
     node * final;
+
+//    void allibera();
 public:
 	estructuraDinamica();
     estructuraDinamica(estructuraDinamica & e);
@@ -50,7 +56,7 @@ public:
 
     void Llistar() const;
 
-    ~estructuraDinamica();
+//    ~estructuraDinamica();
 };
 
 

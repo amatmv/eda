@@ -21,7 +21,6 @@ int main()
 	estructuraDinamica e;
 	int n;
 
-
 	cin >>n;
   
 	while (n!=0) {
@@ -29,7 +28,6 @@ int main()
 		cin >> n;
 	}
 	e.Llistar();
-  
 	
 	return 0;
 }
