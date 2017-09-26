@@ -1,40 +1,77 @@
-#include <iostream>
+/*
+ *  estructuraDinamica.h
+ *  EstructuraDinamica
+ *
+ *  Created by Santi Espigule & Joan Surrell.
+ *  Copyright (c) 2004, 2005 IMA-UdG.
+ *
+ * Aquest fitxer es comu a tots els programes que usen l'estructura circular
+ * simplement encadenada amb sentinella.   
+ *
+ * JSS - 2008
+ *    cal afegir-hi els metodes a implementar
+ * JSS [ACS] - 2010
+ *    s'ha canviat una diferencia amb el codi de l'enunciat  
+ */
+
 #include "estructuraDinamica.h"
+#include <iostream>
+
 using namespace std;
 
-
-//////// Problema 6
-/*
- * Exemples d'execucio
- *
- * entrada:
- 3 4 2 5 0
- * sortida:
- 5 2 4 0 3 S:3
- *
- * entrada:
- 9 7 5 1 0
- * sortida:
- 1 5 7 0 9 S:9
- */
-int main()
+estructuraDinamica::estructuraDinamica()
 {
-	estructuraDinamica e;
-	int primer, anterior, n;
+	 inici = new node;
+	 inici->seguent = inici;
+	 inici->dada = 0;
+}
 
 
-	cin >> primer;
-	anterior = primer;
-	e.AfegirInici(primer);
-  
-	cin >> n;
-	while (n != 0) {
-		e.AfegirAbans(n, anterior);
-		anterior = n;
-		cin >> n;
-	}
-	e.AfegirAbans(n, primer);
-	e.Llistar();
-	
-	return 0;
+void estructuraDinamica::AfegirInici(int i)
+{
+    node *nou = new node(i);
+    nou->seguent = inici->seguent;
+    inici->seguent = nou;
+}
+
+bool estructuraDinamica::Existeix(int n) const
+{
+    if (inici->seguent == inici)
+        return inici->dada == n;
+    inici->dada = n;
+    node *aux = inici->seguent;
+    while(aux->dada != n)
+        aux = aux->seguent;
+    return aux->dada == n;
+}
+
+
+void estructuraDinamica::AfegirAbans(int i, int j)
+{
+    if (Existeix(j))
+    {
+        node *nou = new node(i);
+        node *aux = inici->seguent;
+        node *ant = inici;
+        while(aux->dada != j)
+        {
+            ant = aux;
+            aux = aux->seguent;
+        }
+        ant->seguent = nou;
+        nou->seguent = aux;
+    }
+
+}
+
+void estructuraDinamica::Llistar() const
+{
+	 if (inici != inici->seguent) {
+		 node *p = inici->seguent; 
+		 while (p != inici) { 
+			 cout << p->dada << " "; 
+			 p = p->seguent;
+		 }
+	 } 
+	 cout << "S:" << inici->dada << endl; // llista el sentinella 
 }

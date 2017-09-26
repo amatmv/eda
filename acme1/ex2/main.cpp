@@ -22,7 +22,6 @@ int main()
 	estructuraDinamica e;
 	int primer, anterior, n;
 
-
 	cin >> primer;
 	anterior = primer;
 	e.AfegirInici(primer);
