@@ -26,6 +26,16 @@ estructuraDinamica::estructuraDinamica()
 	 inici->dada = 0;
 }
 
+void estructuraDinamica::InserirOrdenadament(int i)
+{
+    if(inici->seguent != inici)
+    {
+        node *aux = inici->seguent;
+        
+    }
+
+}
+
 
 void estructuraDinamica::Llistar() const
 {
