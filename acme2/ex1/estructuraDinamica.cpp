@@ -28,12 +28,13 @@ estructuraDinamica::estructuraDinamica()
 
 void estructuraDinamica::InserirOrdenadament(int i)
 {
-    if(inici->seguent != inici)
-    {
-        node *aux = inici->seguent;
-        
-    }
-
+	inici->dada = i;
+	node *aux = inici;
+	while(i > aux->seguent->dada)
+		aux = aux->seguent;
+	node *nou = new node(i);
+	nou->seguent = aux->seguent;
+	aux->seguent = nou;
 }
 
 

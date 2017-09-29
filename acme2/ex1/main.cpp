@@ -17,7 +17,7 @@ using namespace std;
  * sortida:
  1 5 7 9 S:1
  */
-int main () {
+int main() {
     int n;
     estructuraDinamica e;
 

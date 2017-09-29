@@ -23,6 +23,10 @@ struct node
 {
     int dada;
     node * seguent;
+    node():
+            dada(0), seguent(NULL){}
+    node(int i):
+            dada(i), seguent(NULL){}
 };
 
 class estructuraDinamica // circular sentinella
@@ -49,7 +53,7 @@ public:
     void Llistar( ) const;
     
 
-    ~estructuraDinamica();
+//    ~estructuraDinamica();
 };
 
 #endif	
