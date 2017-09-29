@@ -1,5 +1,5 @@
 *.txt
-!/cmake-build-debug
+cmake-build-debug
 *.idea
 *.out
 *.c
