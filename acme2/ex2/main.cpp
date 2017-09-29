@@ -22,7 +22,7 @@ int main()
 {
 	estructuraDinamica e;
 	int n;
-   	
+
 	cin >> n;
   
 	while (n != 0) {
