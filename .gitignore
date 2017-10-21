@@ -7,6 +7,8 @@ Makefile
 *.cmake
 cmake
 *.cbp
+*.pdf
+*.tar.gz
 *.log
 .settings
 .vs
