@@ -1,0 +1,21 @@
+#!/bin/bash
+
+printf "\e[33mProva \"t0\": `cat t0`\n\e[0m"
+./main < t0
+printf "\n\n"
+
+printf "\e[33mProva \"t1\": `cat t1`\n\e[0m"
+./main < t1
+printf "\n\n"
+
+printf "\e[33mProva \"t2\": `cat t2`\n\e[0m"
+./main < t2
+printf "\n\n"
+
+printf "\e[33mProva \"t3\": `cat t3`\n\e[0m"
+./main < t3
+printf "\n\n"
+
+printf "\e[33mProva \"t4\": `cat t4`\n\e[0m"
+./main < t4
+printf "\n\n"
