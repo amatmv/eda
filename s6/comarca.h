@@ -13,56 +13,62 @@
 
 using namespace std;
 
+/// @brief Classe que re/ @presenta una comarca i n'emmagatzema la seva informació
 class Comarca
 {
 public:
 
-    //Pre: --;
-    //Post: retorna el nombre de comarques que te el pais
+    /// @pre: cert
+    /// @post retorna el nombre de comarques que te el pais
     Comarca();
 
-    //Pre: --;
-    //Post: retorna el nombre de comarques que te el pais
+    /// @pre: cert
+    /// @post retorna el nombre de comarques que te el pais
     Comarca(int codi, const string &nom);
 
-    //Pre: --
-    //Post: retorna el codi de la comarca actual
+    /// @pre: cert
+    /// @post retorna el codi de la comarca actual
     int codi() const;
 
-    //Pre: --
-    //Post: retorna el nom de la comarca
+    /// @pre: cert
+    /// @post retorna el nom de la comarca
     string nom() const;
 
-    //Pre: --
-    //Post: retorna la extensio de la comarca
+    /// @pre: cert
+    /// @post retorna la extensio de la comarca
     float extensio() const;
 
-    //Pre: --
-    //Post: retorna la poblacio de la comarca
+    /// @pre: cert
+    /// @post retorna la poblacio de la comarca
     int poblacio() const;
 
-    //Pre: --
-    //Post: retorna cert si la comarca conte les dades del constructor per defecte; fals altrament
+    /// @pre: cert
+    /// @post retorna cert si la comarca conte les dades del constructor per defecte; fals altrament
     bool buida() const;
 
-    //Pre: --
-    //Post: retorna cert si el Municipi es troba a la comarca, fals altrament
+    /// @pre: cert
+    /// @post retorna cert si el Municipi es troba a la comarca, fals altrament
     bool existeix(const Municipi &m) const;
 
-    //Pre: --
-    //Post: afegeix un Municipi a la comarca
+    /// @pre: cert
+    /// @post afegeix un Municipi a la comarca
     void inserir_municipi(const Municipi &m);
 
-    //Pre: --
-    //Post: redefinició de l'operador de sortida predeterminat
+    /// @pre: cert
+    /// @post redefinició de l'operador de sortida / @predeterminat
     friend ostream& operator << (ostream& o, const Comarca& p);
 
 private:
 
+    /// Estructura de dades que emmagatzema els municipis que pertanyen a la comarca.
     set<int> _municipis;
-
-    int _codi, _poblacio;
+    /// Codi de la comarca.
+    int _codi;
+    /// Nombre d'habitants de la comarca.
+    int _poblacio;
+    /// Nom de la comarca.
     string _nom;
+    /// Extensió (en km²) de la comarca.
     float _extensio;
 };
 

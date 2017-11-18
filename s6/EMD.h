@@ -9,41 +9,46 @@
 
 using namespace std;
 
+/// @brief Una EMD representa una Entitat Municipal Descentralitada, que és un nucli urbà que no està adjunt al terme d'un municipi.
 class EMD
 {
 public:
 
-    //Pre: --;
-    //Post: constructor per defecte de EMD
+    /// @pre cert
+    /// @post constructor per defecte de EMD
     EMD();
 
-    //Pre: --;
-    //Post: constructor amb paràmetres de EMD
+    /// @pre cert
+    /// @post constructor amb paràmetres de EMD
     EMD(const int& codi_municipi, const string& codi, const string& nom);
 
-    //Pre: --;
-    //Post: retorna el codi postal del municipi actual
+    /// @pre cert
+    /// @post retorna el codi postal del municipi actual
     int codi_municipi() const;
 
-    //Pre: --;
-    //Post: retorna el codi del municipi actual
+    /// @pre cert
+    /// @post retorna el codi del municipi actual
     string codi() const;
 
-    //Pre: --;
-    //Post: retorna el nom del municipi actual
+    /// @pre cert
+    /// @post retorna el nom del municipi actual
     string nom() const;
 
-    //Pre: --;
-    //Post: comparador de EMDs segons el codi
+    /// @pre cert
+    /// @post comparador de EMDs segons el codi
     bool operator< (const EMD&e) const;
 
-    //Pre: --;
-    //Post: redefinició de sortida per a mostrar la EMD e
+    /// @pre cert
+    /// @post redefinició de sortida per a mostrar la EMD e
     friend ostream& operator << (ostream& o, const EMD& e);
 
 private:
+    /// Codi del municipi al que pertanyen
     int _codi_municipi;
-    string _codi, _nom;
+    /// Codi de la EMD
+    string _codi;
+    /// Nom de la EMD
+    string _nom;
 };
 
 
