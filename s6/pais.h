@@ -1,6 +1,6 @@
 // Amat Martínez Vilà
 // u1939654
-// Sessió 3
+// Sessió 6
 
 #ifndef S1_PAIS_H
 #define S1_PAIS_H

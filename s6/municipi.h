@@ -1,6 +1,6 @@
-//
-// Created by amat on 23/10/17.
-//
+// Amat Martínez Vilà
+// u1939654
+// Sessió 6
 
 #ifndef S2_MUNICIPI_H
 #define S2_MUNICIPI_H

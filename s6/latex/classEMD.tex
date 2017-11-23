@@ -1,0 +1,145 @@
+\hypertarget{classEMD}{}\section{E\+MD Class Reference}
+\label{classEMD}\index{E\+MD@{E\+MD}}
+
+
+Una \hyperlink{classEMD}{E\+MD} representa una Entitat Municipal Descentralitada, que és un nucli urbà que no està adjunt al terme d\textquotesingle{}un municipi.  
+
+
+
+
+{\ttfamily \#include $<$E\+M\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEMD_a1b23820b6cb96bf647c2d61ad2651225}{E\+MD} ()
+\item 
+\hyperlink{classEMD_ab77285f553e7476e81c119a229a472a6}{E\+MD} (const int \&\hyperlink{classEMD_afa3f267ffd6407f481e48fc5cfd4d577}{codi\+\_\+municipi}, const string \&\hyperlink{classEMD_ae34a435b49ffbc76b550dbeb6260e183}{codi}, const string \&\hyperlink{classEMD_a170411430493c144bb7eb00d7def4a51}{nom})
+\item 
+int \hyperlink{classEMD_afa3f267ffd6407f481e48fc5cfd4d577}{codi\+\_\+municipi} () const
+\item 
+string \hyperlink{classEMD_ae34a435b49ffbc76b550dbeb6260e183}{codi} () const
+\item 
+string \hyperlink{classEMD_a170411430493c144bb7eb00d7def4a51}{nom} () const
+\item 
+bool \hyperlink{classEMD_a73e84ad03c35f6374ce50320e4135d0c}{operator$<$} (const \hyperlink{classEMD}{E\+MD} \&e) const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEMD_a23e41ce6015ce5fd269940df149a4f37}\label{classEMD_a23e41ce6015ce5fd269940df149a4f37}} 
+int \hyperlink{classEMD_a23e41ce6015ce5fd269940df149a4f37}{\+\_\+codi\+\_\+municipi}
+\begin{DoxyCompactList}\small\item\em Codi del municipi al que pertanyen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEMD_a8e305fd79c71c7fcba37babe4010076c}\label{classEMD_a8e305fd79c71c7fcba37babe4010076c}} 
+string \hyperlink{classEMD_a8e305fd79c71c7fcba37babe4010076c}{\+\_\+codi}
+\begin{DoxyCompactList}\small\item\em Codi de la \hyperlink{classEMD}{E\+MD}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEMD_a8eadbc1e3e6142b1a6832d42a41837ec}\label{classEMD_a8eadbc1e3e6142b1a6832d42a41837ec}} 
+string \hyperlink{classEMD_a8eadbc1e3e6142b1a6832d42a41837ec}{\+\_\+nom}
+\begin{DoxyCompactList}\small\item\em Nom de la \hyperlink{classEMD}{E\+MD}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classEMD_ac11042dfa7db4251904466f77bbe61ea}{operator$<$$<$} (ostream \&o, const \hyperlink{classEMD}{E\+MD} \&e)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Una \hyperlink{classEMD}{E\+MD} representa una Entitat Municipal Descentralitada, que és un nucli urbà que no està adjunt al terme d\textquotesingle{}un municipi. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEMD_a1b23820b6cb96bf647c2d61ad2651225}\label{classEMD_a1b23820b6cb96bf647c2d61ad2651225}} 
+\index{E\+MD@{E\+MD}!E\+MD@{E\+MD}}
+\index{E\+MD@{E\+MD}!E\+MD@{E\+MD}}
+\subsubsection{\texorpdfstring{E\+M\+D()}{EMD()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily E\+M\+D\+::\+E\+MD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+constructor per defecte de \hyperlink{classEMD}{E\+MD} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classEMD_ab77285f553e7476e81c119a229a472a6}\label{classEMD_ab77285f553e7476e81c119a229a472a6}} 
+\index{E\+MD@{E\+MD}!E\+MD@{E\+MD}}
+\index{E\+MD@{E\+MD}!E\+MD@{E\+MD}}
+\subsubsection{\texorpdfstring{E\+M\+D()}{EMD()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily E\+M\+D\+::\+E\+MD (\begin{DoxyParamCaption}\item[{const int \&}]{codi\+\_\+municipi,  }\item[{const string \&}]{codi,  }\item[{const string \&}]{nom }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+constructor amb paràmetres de \hyperlink{classEMD}{E\+MD} 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEMD_ae34a435b49ffbc76b550dbeb6260e183}\label{classEMD_ae34a435b49ffbc76b550dbeb6260e183}} 
+\index{E\+MD@{E\+MD}!codi@{codi}}
+\index{codi@{codi}!E\+MD@{E\+MD}}
+\subsubsection{\texorpdfstring{codi()}{codi()}}
+{\footnotesize\ttfamily string E\+M\+D\+::codi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el codi del municipi actual 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classEMD_afa3f267ffd6407f481e48fc5cfd4d577}\label{classEMD_afa3f267ffd6407f481e48fc5cfd4d577}} 
+\index{E\+MD@{E\+MD}!codi\+\_\+municipi@{codi\+\_\+municipi}}
+\index{codi\+\_\+municipi@{codi\+\_\+municipi}!E\+MD@{E\+MD}}
+\subsubsection{\texorpdfstring{codi\+\_\+municipi()}{codi\_municipi()}}
+{\footnotesize\ttfamily int E\+M\+D\+::codi\+\_\+municipi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el codi postal del municipi actual 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classEMD_a170411430493c144bb7eb00d7def4a51}\label{classEMD_a170411430493c144bb7eb00d7def4a51}} 
+\index{E\+MD@{E\+MD}!nom@{nom}}
+\index{nom@{nom}!E\+MD@{E\+MD}}
+\subsubsection{\texorpdfstring{nom()}{nom()}}
+{\footnotesize\ttfamily string E\+M\+D\+::nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el nom del municipi actual 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classEMD_a73e84ad03c35f6374ce50320e4135d0c}\label{classEMD_a73e84ad03c35f6374ce50320e4135d0c}} 
+\index{E\+MD@{E\+MD}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!E\+MD@{E\+MD}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool E\+M\+D\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classEMD}{E\+MD} \&}]{e }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+comparador de E\+M\+Ds segons el codi 
+\end{DoxyPostcond}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classEMD_ac11042dfa7db4251904466f77bbe61ea}\label{classEMD_ac11042dfa7db4251904466f77bbe61ea}} 
+\index{E\+MD@{E\+MD}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!E\+MD@{E\+MD}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{o,  }\item[{const \hyperlink{classEMD}{E\+MD} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+redefinició de sortida per a mostrar la \hyperlink{classEMD}{E\+MD} e 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+M\+D.\+h\item 
+E\+M\+D.\+cpp\end{DoxyCompactItemize}

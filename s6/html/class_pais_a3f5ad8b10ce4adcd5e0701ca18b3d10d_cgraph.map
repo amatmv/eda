@@ -1,0 +1,7 @@
+<map id="Pais::inserir_municipi" name="Pais::inserir_municipi">
+<area shape="rect" id="node2" href="$class_municipi.html#ae95581bf220eb0e8bf0b70d423e2a57b" title="Municipi::codi_comarca" alt="" coords="200,5,359,32"/>
+<area shape="rect" id="node3" href="$class_municipi.html#acab7010580062b67a1fd7b68064eed9a" title="Municipi::nom" alt="" coords="228,56,331,83"/>
+<area shape="rect" id="node4" href="$class_municipi.html#aa4a717b35e739dd728eb83eff99ebe70" title="Municipi::codi" alt="" coords="228,107,331,133"/>
+<area shape="rect" id="node5" href="$class_municipi.html#a66542f3f6e1a538f9fd6300bbe9bd147" title="Municipi::extensio" alt="" coords="216,157,343,184"/>
+<area shape="rect" id="node6" href="$class_municipi.html#abafd1e3a64d82662c5aa24383c5d528e" title="Municipi::poblacio" alt="" coords="216,208,343,235"/>
+</map>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica 6 EDA: Fitxer de Codi comarca.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica 6 EDA
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Activitatpràcticadelasessió6del&#39;assignaturaEstructuresdeDadesiAlgorísmica</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('comarca_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">comarca.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="comarca_8h.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Amat Martínez Vilà</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// u1939654</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Sessió 6</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef S1_COMARCA_H</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define S1_COMARCA_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cctype&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="municipi_8h.html">municipi.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_comarca.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_comarca.html">Comarca</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_comarca.html">Comarca</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_comarca.html">Comarca</a>(<span class="keywordtype">int</span> codi, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;nom);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">int</span> codi() <span class="keyword">const</span>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">string</span> nom() <span class="keyword">const</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">float</span> extensio() <span class="keyword">const</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> poblacio() <span class="keyword">const</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> buida() <span class="keyword">const</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> existeix(<span class="keyword">const</span> <a class="code" href="class_municipi.html">Municipi</a> &amp;m) <span class="keyword">const</span>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> inserir_municipi(<span class="keyword">const</span> <a class="code" href="class_municipi.html">Municipi</a> &amp;m);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">friend</span> ostream&amp; <a class="code" href="comarca_8cpp.html#a23f6b084aaeb22a3c2cfdbb11a6b6853">operator &lt;&lt; </a>(ostream&amp; o, <span class="keyword">const</span> <a class="code" href="class_comarca.html">Comarca</a>&amp; p);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_comarca.html#a8d445f43210359e5c6a86e1f6bbeb3f5">   64</a></span>&#160;    set&lt;int&gt; <a class="code" href="class_comarca.html#a8d445f43210359e5c6a86e1f6bbeb3f5">_municipis</a>;</div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_comarca.html#ac8e4ac6d11804c90823ab02611bb6786">   66</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_comarca.html#ac8e4ac6d11804c90823ab02611bb6786">_codi</a>;</div><div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_comarca.html#a23d7f955141f175b887d9010ffd583e8">   68</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_comarca.html#a23d7f955141f175b887d9010ffd583e8">_poblacio</a>;</div><div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_comarca.html#a7af15f652d23d65d240943b06c351f0d">   70</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_comarca.html#a7af15f652d23d65d240943b06c351f0d">_nom</a>;</div><div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_comarca.html#adaf90baa4038057902deb537af5f1fe7">   72</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_comarca.html#adaf90baa4038057902deb537af5f1fe7">_extensio</a>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif //S1_COMARCA_H</span></div><div class="ttc" id="class_comarca_html_a7af15f652d23d65d240943b06c351f0d"><div class="ttname"><a href="class_comarca.html#a7af15f652d23d65d240943b06c351f0d">Comarca::_nom</a></div><div class="ttdeci">string _nom</div><div class="ttdoc">Nom de la comarca. </div><div class="ttdef"><b>Definition:</b> <a href="comarca_8h_source.html#l00070">comarca.h:70</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_comarca_html_adaf90baa4038057902deb537af5f1fe7"><div class="ttname"><a href="class_comarca.html#adaf90baa4038057902deb537af5f1fe7">Comarca::_extensio</a></div><div class="ttdeci">float _extensio</div><div class="ttdoc">Extensió (en km²) de la comarca. </div><div class="ttdef"><b>Definition:</b> <a href="comarca_8h_source.html#l00072">comarca.h:72</a></div></div>
+<div class="ttc" id="comarca_8cpp_html_a23f6b084aaeb22a3c2cfdbb11a6b6853"><div class="ttname"><a href="comarca_8cpp.html#a23f6b084aaeb22a3c2cfdbb11a6b6853">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;o, const Comarca &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="comarca_8cpp_source.html#l00064">comarca.cpp:64</a></div></div>
+<div class="ttc" id="class_comarca_html_a23d7f955141f175b887d9010ffd583e8"><div class="ttname"><a href="class_comarca.html#a23d7f955141f175b887d9010ffd583e8">Comarca::_poblacio</a></div><div class="ttdeci">int _poblacio</div><div class="ttdoc">Nombre d&amp;#39;habitants de la comarca. </div><div class="ttdef"><b>Definition:</b> <a href="comarca_8h_source.html#l00068">comarca.h:68</a></div></div>
+<div class="ttc" id="municipi_8h_html"><div class="ttname"><a href="municipi_8h.html">municipi.h</a></div></div>
+<div class="ttc" id="class_comarca_html_a8d445f43210359e5c6a86e1f6bbeb3f5"><div class="ttname"><a href="class_comarca.html#a8d445f43210359e5c6a86e1f6bbeb3f5">Comarca::_municipis</a></div><div class="ttdeci">set&lt; int &gt; _municipis</div><div class="ttdoc">Estructura de dades que emmagatzema els municipis que pertanyen a la comarca. </div><div class="ttdef"><b>Definition:</b> <a href="comarca_8h_source.html#l00064">comarca.h:64</a></div></div>
+<div class="ttc" id="class_municipi_html"><div class="ttname"><a href="class_municipi.html">Municipi</a></div><div class="ttdoc">Classe que represente un minicipi, el qual té un codi, un nom, una població, una extensió. </div><div class="ttdef"><b>Definition:</b> <a href="municipi_8h_source.html#l00015">municipi.h:15</a></div></div>
+<div class="ttc" id="class_comarca_html_ac8e4ac6d11804c90823ab02611bb6786"><div class="ttname"><a href="class_comarca.html#ac8e4ac6d11804c90823ab02611bb6786">Comarca::_codi</a></div><div class="ttdeci">int _codi</div><div class="ttdoc">Codi de la comarca. </div><div class="ttdef"><b>Definition:</b> <a href="comarca_8h_source.html#l00066">comarca.h:66</a></div></div>
+<div class="ttc" id="class_comarca_html"><div class="ttname"><a href="class_comarca.html">Comarca</a></div><div class="ttdoc">Classe que representa una comarca i n&amp;#39;emmagatzema la seva informació </div><div class="ttdef"><b>Definition:</b> <a href="comarca_8h_source.html#l00017">comarca.h:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="comarca_8h.html">comarca.h</a></li>
+    <li class="footer">Generat per
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

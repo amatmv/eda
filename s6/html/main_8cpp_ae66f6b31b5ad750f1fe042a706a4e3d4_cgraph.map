@@ -1,0 +1,18 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$class_pais.html#add5cd1faf2844c0985bf940fad91cf3f" title="Pais::inserir_comarca" alt="" coords="115,81,263,108"/>
+<area shape="rect" id="node4" href="$class_pais.html#a3f5ad8b10ce4adcd5e0701ca18b3d10d" title="Pais::inserir_municipi" alt="" coords="116,183,263,209"/>
+<area shape="rect" id="node10" href="$class_pais.html#a3ba9135e6fb76aabb01e5661a5eaf333" title="Pais::inserir_EMD" alt="" coords="125,284,253,311"/>
+<area shape="rect" id="node13" href="$class_pais.html#af640c7bb35f0fa4799c41ae7e4835cb5" title="Pais::poblacio" alt="" coords="137,335,241,361"/>
+<area shape="rect" id="node14" href="$class_pais.html#af6b3159f78cd255468f513178760dd1f" title="Pais::extensio" alt="" coords="137,385,242,412"/>
+<area shape="rect" id="node15" href="$class_pais.html#a67169ad4c8069867327eac695462f89c" title="Pais::nombre_comarques" alt="" coords="104,436,275,463"/>
+<area shape="rect" id="node16" href="$class_pais.html#a246084dd38da8773d7beb428af235234" title="Pais::llistar_comarques" alt="" coords="110,487,269,513"/>
+<area shape="rect" id="node17" href="$class_pais.html#a21a52a69fa3a93474ba9c63caab0772a" title="Pais::mostrar_info\l_municipi" alt="" coords="125,538,253,579"/>
+<area shape="rect" id="node3" href="$class_comarca.html#a53b5d556f592bb3fe49d97a907eb7eae" title="Comarca::codi" alt="" coords="349,5,455,32"/>
+<area shape="rect" id="node5" href="$class_municipi.html#ae95581bf220eb0e8bf0b70d423e2a57b" title="Municipi::codi_comarca" alt="" coords="323,56,481,83"/>
+<area shape="rect" id="node6" href="$class_municipi.html#acab7010580062b67a1fd7b68064eed9a" title="Municipi::nom" alt="" coords="351,107,453,133"/>
+<area shape="rect" id="node7" href="$class_municipi.html#aa4a717b35e739dd728eb83eff99ebe70" title="Municipi::codi" alt="" coords="351,157,453,184"/>
+<area shape="rect" id="node8" href="$class_municipi.html#a66542f3f6e1a538f9fd6300bbe9bd147" title="Municipi::extensio" alt="" coords="339,208,465,235"/>
+<area shape="rect" id="node9" href="$class_municipi.html#abafd1e3a64d82662c5aa24383c5d528e" title="Municipi::poblacio" alt="" coords="339,259,465,285"/>
+<area shape="rect" id="node11" href="$class_pais.html#a45b3d49b3b3ff239c18d535c48c77697" title="Pais::existeix_municipi" alt="" coords="324,309,480,336"/>
+<area shape="rect" id="node12" href="$class_e_m_d.html#afa3f267ffd6407f481e48fc5cfd4d577" title="EMD::codi_municipi" alt="" coords="333,360,471,387"/>
+</map>

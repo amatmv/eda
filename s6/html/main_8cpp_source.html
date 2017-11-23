@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pràctica 6 EDA: Fitxer de Codi main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Pràctica 6 EDA
+   &#160;<span id="projectnumber">1</span>
+   </div>
+   <div id="projectbrief">Activitatpràcticadelasessió6del&#39;assignaturaEstructuresdeDadesiAlgorísmica</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generat per Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('main_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">Veure la documentació d'aquest fitxer.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Amat Martínez Vilà</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// u1939654</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Sessió 6</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pais_8h.html">pais.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   10</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_pais.html">Pais</a> p;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">unsigned</span> codi_comarca;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">string</span> nom_comarca;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">/* Comencem a llegir comarques */</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    cin &gt;&gt; codi_comarca;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">while</span> (codi_comarca != 0)</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        cin.ignore ();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        getline (cin, nom_comarca);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        p.<a class="code" href="class_pais.html#add5cd1faf2844c0985bf940fad91cf3f">inserir_comarca</a> (<a class="code" href="class_comarca.html">Comarca</a> (codi_comarca, nom_comarca));</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        cin &gt;&gt; codi_comarca;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">unsigned</span> codi_municipi, poblacio;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">float</span> extensio;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">string</span> nom_municipi;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">/* Ara llegim municipis i els afegim al Pais*/</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    cin &gt;&gt; codi_comarca;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">while</span> (codi_comarca != 0)</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        cin &gt;&gt; codi_municipi;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        cin.ignore ();</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        getline (cin, nom_municipi);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        cin &gt;&gt; poblacio &gt;&gt; extensio;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        p.<a class="code" href="class_pais.html#a3f5ad8b10ce4adcd5e0701ca18b3d10d">inserir_municipi</a> (<a class="code" href="class_municipi.html">Municipi</a> (codi_comarca, codi_municipi, nom_municipi, poblacio, extensio));</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        cin &gt;&gt; codi_comarca;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">string</span> codi_EMD, nom_EMD;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    cin &gt;&gt; codi_municipi;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">while</span> (codi_municipi != 0)</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        cin.ignore ();</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        getline (cin, codi_EMD);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        getline (cin, nom_EMD);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        p.<a class="code" href="class_pais.html#a3ba9135e6fb76aabb01e5661a5eaf333">inserir_EMD</a> (<a class="code" href="class_e_m_d.html">EMD</a>(codi_municipi, codi_EMD, nom_EMD));</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        cin &gt;&gt; codi_municipi;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    cin.ignore();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;----------------------------------------&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;INFORMACIÓ DEL PAÍS&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot; - Població: &quot;</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;         &lt;&lt; p.<a class="code" href="class_pais.html#af640c7bb35f0fa4799c41ae7e4835cb5">poblacio</a> () &lt;&lt; endl;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot; - Extensió: &quot;</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;         &lt;&lt; p.<a class="code" href="class_pais.html#af6b3159f78cd255468f513178760dd1f">extensio</a> () &lt;&lt; endl;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot; - Nombre de comarques: &quot;</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;         &lt;&lt; p.<a class="code" href="class_pais.html#a67169ad4c8069867327eac695462f89c">nombre_comarques</a> () &lt;&lt; endl &lt;&lt; endl;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;----------------------------------------&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;INFORMACIÓ DEL PAÍS PER COMARCA  (codi, nom, població, extensió)&quot;</span> &lt;&lt; endl &lt;&lt; endl;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    p.<a class="code" href="class_pais.html#a246084dd38da8773d7beb428af235234">llistar_comarques</a> ();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;----------------------------------------&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Introdueix el nom del municipi del qual vols consultar la informació (\&quot;FI\&quot; per a acabar el programa)&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">string</span> entrada;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;&gt; &quot;</span>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    getline(cin, entrada);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">while</span> (entrada != <span class="stringliteral">&quot;FI&quot;</span>)</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        p.<a class="code" href="class_pais.html#a21a52a69fa3a93474ba9c63caab0772a">mostrar_info_municipi</a>(entrada);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;----------------------------------------&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Introdueix el nom del municipi del què vols consultar la informació (\&quot;FI\&quot; per a acabar el programa)&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;&gt; &quot;</span>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        getline(cin, entrada);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;**************** FI ****************&quot;</span> &lt;&lt; endl;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div><div class="ttc" id="class_pais_html_a3ba9135e6fb76aabb01e5661a5eaf333"><div class="ttname"><a href="class_pais.html#a3ba9135e6fb76aabb01e5661a5eaf333">Pais::inserir_EMD</a></div><div class="ttdeci">void inserir_EMD(const EMD &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="pais_8cpp_source.html#l00060">pais.cpp:60</a></div></div>
+<div class="ttc" id="class_pais_html_add5cd1faf2844c0985bf940fad91cf3f"><div class="ttname"><a href="class_pais.html#add5cd1faf2844c0985bf940fad91cf3f">Pais::inserir_comarca</a></div><div class="ttdeci">void inserir_comarca(const Comarca &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="pais_8cpp_source.html#l00054">pais.cpp:54</a></div></div>
+<div class="ttc" id="class_e_m_d_html"><div class="ttname"><a href="class_e_m_d.html">EMD</a></div><div class="ttdoc">Una EMD representa una Entitat Municipal Descentralitada, que és un nucli urbà que no està adjunt al ...</div><div class="ttdef"><b>Definition:</b> <a href="_e_m_d_8h_source.html#l00013">EMD.h:13</a></div></div>
+<div class="ttc" id="class_pais_html_a246084dd38da8773d7beb428af235234"><div class="ttname"><a href="class_pais.html#a246084dd38da8773d7beb428af235234">Pais::llistar_comarques</a></div><div class="ttdeci">void llistar_comarques() const</div><div class="ttdef"><b>Definition:</b> <a href="pais_8cpp_source.html#l00047">pais.cpp:47</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="main_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00010">main.cpp:10</a></div></div>
+<div class="ttc" id="class_pais_html_a3f5ad8b10ce4adcd5e0701ca18b3d10d"><div class="ttname"><a href="class_pais.html#a3f5ad8b10ce4adcd5e0701ca18b3d10d">Pais::inserir_municipi</a></div><div class="ttdeci">void inserir_municipi(const Municipi &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="pais_8cpp_source.html#l00032">pais.cpp:32</a></div></div>
+<div class="ttc" id="class_pais_html_a21a52a69fa3a93474ba9c63caab0772a"><div class="ttname"><a href="class_pais.html#a21a52a69fa3a93474ba9c63caab0772a">Pais::mostrar_info_municipi</a></div><div class="ttdeci">void mostrar_info_municipi(const string &amp;nom_municipi)</div><div class="ttdef"><b>Definition:</b> <a href="pais_8cpp_source.html#l00066">pais.cpp:66</a></div></div>
+<div class="ttc" id="class_pais_html_af6b3159f78cd255468f513178760dd1f"><div class="ttname"><a href="class_pais.html#af6b3159f78cd255468f513178760dd1f">Pais::extensio</a></div><div class="ttdeci">float extensio() const</div><div class="ttdef"><b>Definition:</b> <a href="pais_8cpp_source.html#l00022">pais.cpp:22</a></div></div>
+<div class="ttc" id="class_pais_html"><div class="ttname"><a href="class_pais.html">Pais</a></div><div class="ttdoc">Pais amb la seva extensió, població, número de comarques, comarques i municipis. </div><div class="ttdef"><b>Definition:</b> <a href="pais_8h_source.html#l00016">pais.h:16</a></div></div>
+<div class="ttc" id="class_municipi_html"><div class="ttname"><a href="class_municipi.html">Municipi</a></div><div class="ttdoc">Classe que represente un minicipi, el qual té un codi, un nom, una població, una extensió. </div><div class="ttdef"><b>Definition:</b> <a href="municipi_8h_source.html#l00015">municipi.h:15</a></div></div>
+<div class="ttc" id="pais_8h_html"><div class="ttname"><a href="pais_8h.html">pais.h</a></div></div>
+<div class="ttc" id="class_comarca_html"><div class="ttname"><a href="class_comarca.html">Comarca</a></div><div class="ttdoc">Classe que representa una comarca i n&amp;#39;emmagatzema la seva informació </div><div class="ttdef"><b>Definition:</b> <a href="comarca_8h_source.html#l00017">comarca.h:17</a></div></div>
+<div class="ttc" id="class_pais_html_a67169ad4c8069867327eac695462f89c"><div class="ttname"><a href="class_pais.html#a67169ad4c8069867327eac695462f89c">Pais::nombre_comarques</a></div><div class="ttdeci">int nombre_comarques() const</div><div class="ttdef"><b>Definition:</b> <a href="pais_8cpp_source.html#l00017">pais.cpp:17</a></div></div>
+<div class="ttc" id="class_pais_html_af640c7bb35f0fa4799c41ae7e4835cb5"><div class="ttname"><a href="class_pais.html#af640c7bb35f0fa4799c41ae7e4835cb5">Pais::poblacio</a></div><div class="ttdeci">int poblacio() const</div><div class="ttdef"><b>Definition:</b> <a href="pais_8cpp_source.html#l00027">pais.cpp:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
+    <li class="footer">Generat per
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

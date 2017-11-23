@@ -1,0 +1,193 @@
+\hypertarget{classComarca}{}\section{Comarca Class Reference}
+\label{classComarca}\index{Comarca@{Comarca}}
+
+
+Classe que re/  una comarca i n\textquotesingle{}emmagatzema la seva informació  
+
+
+
+
+{\ttfamily \#include $<$comarca.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classComarca_a2c9c27819363b301ecb2fba47f198ee6}{Comarca} ()
+\item 
+\hyperlink{classComarca_ae73301123c5aa51eeb1b763a7a616e7e}{Comarca} (int \hyperlink{classComarca_a53b5d556f592bb3fe49d97a907eb7eae}{codi}, const string \&\hyperlink{classComarca_aacbbe9a77b5a81d8fd86c06e815e5edc}{nom})
+\item 
+int \hyperlink{classComarca_a53b5d556f592bb3fe49d97a907eb7eae}{codi} () const
+\item 
+string \hyperlink{classComarca_aacbbe9a77b5a81d8fd86c06e815e5edc}{nom} () const
+\item 
+float \hyperlink{classComarca_a311187319875b89b31a8ea4271fca03a}{extensio} () const
+\item 
+int \hyperlink{classComarca_affecc6c07ec0600d6e3e62b23e564222}{poblacio} () const
+\item 
+bool \hyperlink{classComarca_a5085cd7eeb31a30011e40ca726beb5c9}{buida} () const
+\item 
+bool \hyperlink{classComarca_a1cc6e6f47984d1a9d611b665a0742899}{existeix} (const \hyperlink{classMunicipi}{Municipi} \&m) const
+\item 
+void \hyperlink{classComarca_a625e401c9a331b1860bf2a95495e29b5}{inserir\+\_\+municipi} (const \hyperlink{classMunicipi}{Municipi} \&m)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classComarca_a8d445f43210359e5c6a86e1f6bbeb3f5}\label{classComarca_a8d445f43210359e5c6a86e1f6bbeb3f5}} 
+set$<$ int $>$ \hyperlink{classComarca_a8d445f43210359e5c6a86e1f6bbeb3f5}{\+\_\+municipis}
+\begin{DoxyCompactList}\small\item\em Estructura de dades que emmagatzema els municipis que pertanyen a la comarca. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComarca_ac8e4ac6d11804c90823ab02611bb6786}\label{classComarca_ac8e4ac6d11804c90823ab02611bb6786}} 
+int \hyperlink{classComarca_ac8e4ac6d11804c90823ab02611bb6786}{\+\_\+codi}
+\begin{DoxyCompactList}\small\item\em Codi de la comarca. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComarca_a23d7f955141f175b887d9010ffd583e8}\label{classComarca_a23d7f955141f175b887d9010ffd583e8}} 
+int \hyperlink{classComarca_a23d7f955141f175b887d9010ffd583e8}{\+\_\+poblacio}
+\begin{DoxyCompactList}\small\item\em Nombre d\textquotesingle{}habitants de la comarca. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComarca_a7af15f652d23d65d240943b06c351f0d}\label{classComarca_a7af15f652d23d65d240943b06c351f0d}} 
+string \hyperlink{classComarca_a7af15f652d23d65d240943b06c351f0d}{\+\_\+nom}
+\begin{DoxyCompactList}\small\item\em Nom de la comarca. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classComarca_adaf90baa4038057902deb537af5f1fe7}\label{classComarca_adaf90baa4038057902deb537af5f1fe7}} 
+float \hyperlink{classComarca_adaf90baa4038057902deb537af5f1fe7}{\+\_\+extensio}
+\begin{DoxyCompactList}\small\item\em Extensió (en km²) de la comarca. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classComarca_a23f6b084aaeb22a3c2cfdbb11a6b6853}{operator$<$$<$} (ostream \&o, const \hyperlink{classComarca}{Comarca} \&p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que re/  una comarca i n\textquotesingle{}emmagatzema la seva informació 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComarca_a2c9c27819363b301ecb2fba47f198ee6}\label{classComarca_a2c9c27819363b301ecb2fba47f198ee6}} 
+\index{Comarca@{Comarca}!Comarca@{Comarca}}
+\index{Comarca@{Comarca}!Comarca@{Comarca}}
+\subsubsection{\texorpdfstring{Comarca()}{Comarca()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Comarca\+::\+Comarca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+\+: cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el nombre de comarques que te el pais 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classComarca_ae73301123c5aa51eeb1b763a7a616e7e}\label{classComarca_ae73301123c5aa51eeb1b763a7a616e7e}} 
+\index{Comarca@{Comarca}!Comarca@{Comarca}}
+\index{Comarca@{Comarca}!Comarca@{Comarca}}
+\subsubsection{\texorpdfstring{Comarca()}{Comarca()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Comarca\+::\+Comarca (\begin{DoxyParamCaption}\item[{int}]{codi,  }\item[{const string \&}]{nom }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+\+: cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el nombre de comarques que te el pais 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classComarca_a5085cd7eeb31a30011e40ca726beb5c9}\label{classComarca_a5085cd7eeb31a30011e40ca726beb5c9}} 
+\index{Comarca@{Comarca}!buida@{buida}}
+\index{buida@{buida}!Comarca@{Comarca}}
+\subsubsection{\texorpdfstring{buida()}{buida()}}
+{\footnotesize\ttfamily bool Comarca\+::buida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+\+: cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna cert si la comarca conte les dades del constructor per defecte; fals altrament 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classComarca_a53b5d556f592bb3fe49d97a907eb7eae}\label{classComarca_a53b5d556f592bb3fe49d97a907eb7eae}} 
+\index{Comarca@{Comarca}!codi@{codi}}
+\index{codi@{codi}!Comarca@{Comarca}}
+\subsubsection{\texorpdfstring{codi()}{codi()}}
+{\footnotesize\ttfamily int Comarca\+::codi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+\+: cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el codi de la comarca actual 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classComarca_a1cc6e6f47984d1a9d611b665a0742899}\label{classComarca_a1cc6e6f47984d1a9d611b665a0742899}} 
+\index{Comarca@{Comarca}!existeix@{existeix}}
+\index{existeix@{existeix}!Comarca@{Comarca}}
+\subsubsection{\texorpdfstring{existeix()}{existeix()}}
+{\footnotesize\ttfamily bool Comarca\+::existeix (\begin{DoxyParamCaption}\item[{const \hyperlink{classMunicipi}{Municipi} \&}]{m }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+\+: cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna cert si el \hyperlink{classMunicipi}{Municipi} es troba a la comarca, fals altrament 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classComarca_a311187319875b89b31a8ea4271fca03a}\label{classComarca_a311187319875b89b31a8ea4271fca03a}} 
+\index{Comarca@{Comarca}!extensio@{extensio}}
+\index{extensio@{extensio}!Comarca@{Comarca}}
+\subsubsection{\texorpdfstring{extensio()}{extensio()}}
+{\footnotesize\ttfamily float Comarca\+::extensio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+\+: cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna la extensio de la comarca 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classComarca_a625e401c9a331b1860bf2a95495e29b5}\label{classComarca_a625e401c9a331b1860bf2a95495e29b5}} 
+\index{Comarca@{Comarca}!inserir\+\_\+municipi@{inserir\+\_\+municipi}}
+\index{inserir\+\_\+municipi@{inserir\+\_\+municipi}!Comarca@{Comarca}}
+\subsubsection{\texorpdfstring{inserir\+\_\+municipi()}{inserir\_municipi()}}
+{\footnotesize\ttfamily void Comarca\+::inserir\+\_\+municipi (\begin{DoxyParamCaption}\item[{const \hyperlink{classMunicipi}{Municipi} \&}]{m }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+\+: cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+afegeix un \hyperlink{classMunicipi}{Municipi} a la comarca 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classComarca_aacbbe9a77b5a81d8fd86c06e815e5edc}\label{classComarca_aacbbe9a77b5a81d8fd86c06e815e5edc}} 
+\index{Comarca@{Comarca}!nom@{nom}}
+\index{nom@{nom}!Comarca@{Comarca}}
+\subsubsection{\texorpdfstring{nom()}{nom()}}
+{\footnotesize\ttfamily string Comarca\+::nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+\+: cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el nom de la comarca 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classComarca_affecc6c07ec0600d6e3e62b23e564222}\label{classComarca_affecc6c07ec0600d6e3e62b23e564222}} 
+\index{Comarca@{Comarca}!poblacio@{poblacio}}
+\index{poblacio@{poblacio}!Comarca@{Comarca}}
+\subsubsection{\texorpdfstring{poblacio()}{poblacio()}}
+{\footnotesize\ttfamily int Comarca\+::poblacio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+\+: cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna la poblacio de la comarca 
+\end{DoxyPostcond}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classComarca_a23f6b084aaeb22a3c2cfdbb11a6b6853}\label{classComarca_a23f6b084aaeb22a3c2cfdbb11a6b6853}} 
+\index{Comarca@{Comarca}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Comarca@{Comarca}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{o,  }\item[{const \hyperlink{classComarca}{Comarca} \&}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\begin{DoxyPrecond}{Precondition}
+\+: cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+redefinició de l\textquotesingle{}operador de sortida /  
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+comarca.\+h\item 
+comarca.\+cpp\end{DoxyCompactItemize}

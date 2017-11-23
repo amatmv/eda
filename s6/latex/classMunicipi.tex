@@ -1,0 +1,182 @@
+\hypertarget{classMunicipi}{}\section{Municipi Class Reference}
+\label{classMunicipi}\index{Municipi@{Municipi}}
+
+
+Classe que represente un minicipi, el qual té un codi, un nom, una població, una extensió.  
+
+
+
+
+{\ttfamily \#include $<$municipi.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMunicipi_a4670585ae0cca72832d40e58b85a9ab7}{Municipi} ()
+\item 
+\hyperlink{classMunicipi_a3367dd3a452ef5484ad19cdb305eea6c}{Municipi} (const int \&\hyperlink{classMunicipi_ae95581bf220eb0e8bf0b70d423e2a57b}{codi\+\_\+comarca}, const int \&\hyperlink{classMunicipi_aa4a717b35e739dd728eb83eff99ebe70}{codi}, const string \&\hyperlink{classMunicipi_acab7010580062b67a1fd7b68064eed9a}{nom}, const int \&\hyperlink{classMunicipi_abafd1e3a64d82662c5aa24383c5d528e}{poblacio}, const float \&\hyperlink{classMunicipi_a66542f3f6e1a538f9fd6300bbe9bd147}{extensio})
+\item 
+int \hyperlink{classMunicipi_aa4a717b35e739dd728eb83eff99ebe70}{codi} () const
+\item 
+int \hyperlink{classMunicipi_ae95581bf220eb0e8bf0b70d423e2a57b}{codi\+\_\+comarca} () const
+\item 
+string \hyperlink{classMunicipi_acab7010580062b67a1fd7b68064eed9a}{nom} () const
+\item 
+int \hyperlink{classMunicipi_abafd1e3a64d82662c5aa24383c5d528e}{poblacio} () const
+\item 
+float \hyperlink{classMunicipi_a66542f3f6e1a538f9fd6300bbe9bd147}{extensio} () const
+\item 
+void \hyperlink{classMunicipi_afe0d63992f4407b8d7570aa87cc73881}{inserir\+\_\+\+E\+MD} (const \hyperlink{classEMD}{E\+MD} \&e)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMunicipi_af2489acba358baf4e1655ddd96ea0eef}\label{classMunicipi_af2489acba358baf4e1655ddd96ea0eef}} 
+int \hyperlink{classMunicipi_af2489acba358baf4e1655ddd96ea0eef}{\+\_\+codi\+\_\+comarca}
+\begin{DoxyCompactList}\small\item\em Codi de la comarca a la que pertany el municipi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMunicipi_a2f8941e9664a1759d68ae56074f880da}\label{classMunicipi_a2f8941e9664a1759d68ae56074f880da}} 
+int \hyperlink{classMunicipi_a2f8941e9664a1759d68ae56074f880da}{\+\_\+codi}
+\begin{DoxyCompactList}\small\item\em Codi del municipi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMunicipi_a3ef4800192fabda4d692b74c367e0ee1}\label{classMunicipi_a3ef4800192fabda4d692b74c367e0ee1}} 
+string \hyperlink{classMunicipi_a3ef4800192fabda4d692b74c367e0ee1}{\+\_\+nom}
+\begin{DoxyCompactList}\small\item\em Nom del municipi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMunicipi_a4fa60e01e9357f2db897b9266b5766df}\label{classMunicipi_a4fa60e01e9357f2db897b9266b5766df}} 
+int \hyperlink{classMunicipi_a4fa60e01e9357f2db897b9266b5766df}{\+\_\+poblacio}
+\begin{DoxyCompactList}\small\item\em Nombre d\textquotesingle{}habitants del municipi actual. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMunicipi_a7a6ae8deb5e8658a7a87ae1ecd47cf0a}\label{classMunicipi_a7a6ae8deb5e8658a7a87ae1ecd47cf0a}} 
+float \hyperlink{classMunicipi_a7a6ae8deb5e8658a7a87ae1ecd47cf0a}{\+\_\+extensio}
+\begin{DoxyCompactList}\small\item\em Extensió (en km²) del municipi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMunicipi_a7a35c9aa8d6948fe019b445d1e3bd00b}\label{classMunicipi_a7a35c9aa8d6948fe019b445d1e3bd00b}} 
+set$<$ \hyperlink{classEMD}{E\+MD} $>$ \hyperlink{classMunicipi_a7a35c9aa8d6948fe019b445d1e3bd00b}{\+\_\+emds}
+\begin{DoxyCompactList}\small\item\em Estructura de dades per emmagatzemar les Entitats Municipals Descentralitzades que pertanyen a aquest municipi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classMunicipi_a68b2ff825cd32c02ea4e845a460bdb4a}{operator$<$$<$} (ostream \&o, const \hyperlink{classMunicipi}{Municipi} \&m)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe que represente un minicipi, el qual té un codi, un nom, una població, una extensió. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMunicipi_a4670585ae0cca72832d40e58b85a9ab7}\label{classMunicipi_a4670585ae0cca72832d40e58b85a9ab7}} 
+\index{Municipi@{Municipi}!Municipi@{Municipi}}
+\index{Municipi@{Municipi}!Municipi@{Municipi}}
+\subsubsection{\texorpdfstring{Municipi()}{Municipi()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Municipi\+::\+Municipi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+constructor per defecte. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classMunicipi_a3367dd3a452ef5484ad19cdb305eea6c}\label{classMunicipi_a3367dd3a452ef5484ad19cdb305eea6c}} 
+\index{Municipi@{Municipi}!Municipi@{Municipi}}
+\index{Municipi@{Municipi}!Municipi@{Municipi}}
+\subsubsection{\texorpdfstring{Municipi()}{Municipi()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Municipi\+::\+Municipi (\begin{DoxyParamCaption}\item[{const int \&}]{codi\+\_\+comarca,  }\item[{const int \&}]{codi,  }\item[{const string \&}]{nom,  }\item[{const int \&}]{poblacio,  }\item[{const float \&}]{extensio }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+construeix un \hyperlink{classMunicipi}{Municipi} amb les dades donades per paràmetre. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMunicipi_aa4a717b35e739dd728eb83eff99ebe70}\label{classMunicipi_aa4a717b35e739dd728eb83eff99ebe70}} 
+\index{Municipi@{Municipi}!codi@{codi}}
+\index{codi@{codi}!Municipi@{Municipi}}
+\subsubsection{\texorpdfstring{codi()}{codi()}}
+{\footnotesize\ttfamily int Municipi\+::codi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el codi del municipi 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classMunicipi_ae95581bf220eb0e8bf0b70d423e2a57b}\label{classMunicipi_ae95581bf220eb0e8bf0b70d423e2a57b}} 
+\index{Municipi@{Municipi}!codi\+\_\+comarca@{codi\+\_\+comarca}}
+\index{codi\+\_\+comarca@{codi\+\_\+comarca}!Municipi@{Municipi}}
+\subsubsection{\texorpdfstring{codi\+\_\+comarca()}{codi\_comarca()}}
+{\footnotesize\ttfamily int Municipi\+::codi\+\_\+comarca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el codi de la comarca a la qual pertany el municipi 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classMunicipi_a66542f3f6e1a538f9fd6300bbe9bd147}\label{classMunicipi_a66542f3f6e1a538f9fd6300bbe9bd147}} 
+\index{Municipi@{Municipi}!extensio@{extensio}}
+\index{extensio@{extensio}!Municipi@{Municipi}}
+\subsubsection{\texorpdfstring{extensio()}{extensio()}}
+{\footnotesize\ttfamily float Municipi\+::extensio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna la extensió del municipi 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classMunicipi_afe0d63992f4407b8d7570aa87cc73881}\label{classMunicipi_afe0d63992f4407b8d7570aa87cc73881}} 
+\index{Municipi@{Municipi}!inserir\+\_\+\+E\+MD@{inserir\+\_\+\+E\+MD}}
+\index{inserir\+\_\+\+E\+MD@{inserir\+\_\+\+E\+MD}!Municipi@{Municipi}}
+\subsubsection{\texorpdfstring{inserir\+\_\+\+E\+M\+D()}{inserir\_EMD()}}
+{\footnotesize\ttfamily void Municipi\+::inserir\+\_\+\+E\+MD (\begin{DoxyParamCaption}\item[{const \hyperlink{classEMD}{E\+MD} \&}]{e }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+indexa una \hyperlink{classEMD}{E\+MD} al municipi 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classMunicipi_acab7010580062b67a1fd7b68064eed9a}\label{classMunicipi_acab7010580062b67a1fd7b68064eed9a}} 
+\index{Municipi@{Municipi}!nom@{nom}}
+\index{nom@{nom}!Municipi@{Municipi}}
+\subsubsection{\texorpdfstring{nom()}{nom()}}
+{\footnotesize\ttfamily string Municipi\+::nom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el nom del municipi 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classMunicipi_abafd1e3a64d82662c5aa24383c5d528e}\label{classMunicipi_abafd1e3a64d82662c5aa24383c5d528e}} 
+\index{Municipi@{Municipi}!poblacio@{poblacio}}
+\index{poblacio@{poblacio}!Municipi@{Municipi}}
+\subsubsection{\texorpdfstring{poblacio()}{poblacio()}}
+{\footnotesize\ttfamily int Municipi\+::poblacio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna la poblacio del municipi 
+\end{DoxyPostcond}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classMunicipi_a68b2ff825cd32c02ea4e845a460bdb4a}\label{classMunicipi_a68b2ff825cd32c02ea4e845a460bdb4a}} 
+\index{Municipi@{Municipi}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Municipi@{Municipi}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{o,  }\item[{const \hyperlink{classMunicipi}{Municipi} \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+redefinició de sortida per a mostrar el municipi m 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+municipi.\+h\item 
+municipi.\+cpp\end{DoxyCompactItemize}

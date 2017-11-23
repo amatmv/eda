@@ -1,6 +1,6 @@
-//
-// Created by amat on 23/10/17.
-//
+// Amat Martínez Vilà
+// u1939654
+// Sessió 6
 
 #include <cfloat>
 #include "municipi.h"

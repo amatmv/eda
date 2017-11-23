@@ -1,0 +1,190 @@
+\hypertarget{classPais}{}\section{Pais Class Reference}
+\label{classPais}\index{Pais@{Pais}}
+
+
+\hyperlink{classPais}{Pais} amb la seva extensió, població, número de comarques, comarques i municipis.  
+
+
+
+
+{\ttfamily \#include $<$pais.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPais_a16af2b45eb9d07e7292a58556edc9371}{Pais} ()
+\item 
+int \hyperlink{classPais_a67169ad4c8069867327eac695462f89c}{nombre\+\_\+comarques} () const
+\item 
+float \hyperlink{classPais_af6b3159f78cd255468f513178760dd1f}{extensio} () const
+\item 
+int \hyperlink{classPais_af640c7bb35f0fa4799c41ae7e4835cb5}{poblacio} () const
+\item 
+void \hyperlink{classPais_a246084dd38da8773d7beb428af235234}{llistar\+\_\+comarques} () const
+\item 
+bool \hyperlink{classPais_a45b3d49b3b3ff239c18d535c48c77697}{existeix\+\_\+municipi} (const int \&codi\+\_\+municipi) const
+\item 
+void \hyperlink{classPais_a21a52a69fa3a93474ba9c63caab0772a}{mostrar\+\_\+info\+\_\+municipi} (const string \&nom\+\_\+municipi)
+\item 
+void \hyperlink{classPais_a3f5ad8b10ce4adcd5e0701ca18b3d10d}{inserir\+\_\+municipi} (const \hyperlink{classMunicipi}{Municipi} \&m)
+\item 
+void \hyperlink{classPais_a3ba9135e6fb76aabb01e5661a5eaf333}{inserir\+\_\+\+E\+MD} (const \hyperlink{classEMD}{E\+MD} \&m)
+\item 
+void \hyperlink{classPais_add5cd1faf2844c0985bf940fad91cf3f}{inserir\+\_\+comarca} (const \hyperlink{classComarca}{Comarca} \&m)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPais_a54094f033cec9a495d8f41b7f4af61da}\label{classPais_a54094f033cec9a495d8f41b7f4af61da}} 
+float \hyperlink{classPais_a54094f033cec9a495d8f41b7f4af61da}{\+\_\+extensio}
+\begin{DoxyCompactList}\small\item\em Extensió (en km²) del país. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPais_a262050bd533313724c46b392742bdb66}\label{classPais_a262050bd533313724c46b392742bdb66}} 
+int \hyperlink{classPais_a262050bd533313724c46b392742bdb66}{\+\_\+poblacio}
+\begin{DoxyCompactList}\small\item\em Nombre d\textquotesingle{}habitants del país. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPais_a30dfbffec25b05481ff382620110ab9f}\label{classPais_a30dfbffec25b05481ff382620110ab9f}} 
+int \hyperlink{classPais_a30dfbffec25b05481ff382620110ab9f}{\+\_\+num\+\_\+comarques}
+\begin{DoxyCompactList}\small\item\em Nombre de comarques que conté el país. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPais_aabe27b382d94943a3d3ba692ecd5d96d}\label{classPais_aabe27b382d94943a3d3ba692ecd5d96d}} 
+map$<$ int, \hyperlink{classMunicipi}{Municipi} $>$ \hyperlink{classPais_aabe27b382d94943a3d3ba692ecd5d96d}{\+\_\+municipis}
+\begin{DoxyCompactList}\small\item\em Contenidor dels municipis que conté el país, indexats per el seu codi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPais_af9a510da1a2c140819afc7466d5e59cd}\label{classPais_af9a510da1a2c140819afc7466d5e59cd}} 
+map$<$ int, \hyperlink{classComarca}{Comarca} $>$ \hyperlink{classPais_af9a510da1a2c140819afc7466d5e59cd}{\+\_\+comarques}
+\begin{DoxyCompactList}\small\item\em Contenidor de les comarques que té el país, indexats per el seu codi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPais_ad99e3ba63461fa6e60d0cd5fddc98948}\label{classPais_ad99e3ba63461fa6e60d0cd5fddc98948}} 
+unordered\+\_\+map$<$ string, int $>$ $\ast$ \hyperlink{classPais_ad99e3ba63461fa6e60d0cd5fddc98948}{\+\_\+indexos}
+\begin{DoxyCompactList}\small\item\em Estructura de dades que indexa els municipis segons el seu nom i en retorna el seu codi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classPais}{Pais} amb la seva extensió, població, número de comarques, comarques i municipis. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPais_a16af2b45eb9d07e7292a58556edc9371}\label{classPais_a16af2b45eb9d07e7292a58556edc9371}} 
+\index{Pais@{Pais}!Pais@{Pais}}
+\index{Pais@{Pais}!Pais@{Pais}}
+\subsubsection{\texorpdfstring{Pais()}{Pais()}}
+{\footnotesize\ttfamily Pais\+::\+Pais (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+constructor per defecte 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPais_a45b3d49b3b3ff239c18d535c48c77697}\label{classPais_a45b3d49b3b3ff239c18d535c48c77697}} 
+\index{Pais@{Pais}!existeix\+\_\+municipi@{existeix\+\_\+municipi}}
+\index{existeix\+\_\+municipi@{existeix\+\_\+municipi}!Pais@{Pais}}
+\subsubsection{\texorpdfstring{existeix\+\_\+municipi()}{existeix\_municipi()}}
+{\footnotesize\ttfamily bool Pais\+::existeix\+\_\+municipi (\begin{DoxyParamCaption}\item[{const int \&}]{codi\+\_\+municipi }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna cert si el municipi indicat per el codi existeix 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPais_af6b3159f78cd255468f513178760dd1f}\label{classPais_af6b3159f78cd255468f513178760dd1f}} 
+\index{Pais@{Pais}!extensio@{extensio}}
+\index{extensio@{extensio}!Pais@{Pais}}
+\subsubsection{\texorpdfstring{extensio()}{extensio()}}
+{\footnotesize\ttfamily float Pais\+::extensio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el la extensio total del pais 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPais_add5cd1faf2844c0985bf940fad91cf3f}\label{classPais_add5cd1faf2844c0985bf940fad91cf3f}} 
+\index{Pais@{Pais}!inserir\+\_\+comarca@{inserir\+\_\+comarca}}
+\index{inserir\+\_\+comarca@{inserir\+\_\+comarca}!Pais@{Pais}}
+\subsubsection{\texorpdfstring{inserir\+\_\+comarca()}{inserir\_comarca()}}
+{\footnotesize\ttfamily void Pais\+::inserir\+\_\+comarca (\begin{DoxyParamCaption}\item[{const \hyperlink{classComarca}{Comarca} \&}]{m }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+afegeix una \hyperlink{classComarca}{Comarca} País 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPais_a3ba9135e6fb76aabb01e5661a5eaf333}\label{classPais_a3ba9135e6fb76aabb01e5661a5eaf333}} 
+\index{Pais@{Pais}!inserir\+\_\+\+E\+MD@{inserir\+\_\+\+E\+MD}}
+\index{inserir\+\_\+\+E\+MD@{inserir\+\_\+\+E\+MD}!Pais@{Pais}}
+\subsubsection{\texorpdfstring{inserir\+\_\+\+E\+M\+D()}{inserir\_EMD()}}
+{\footnotesize\ttfamily void Pais\+::inserir\+\_\+\+E\+MD (\begin{DoxyParamCaption}\item[{const \hyperlink{classEMD}{E\+MD} \&}]{m }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+afegeix una \hyperlink{classEMD}{E\+MD} al municipi corresponent. Si no existeix, no fa res 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPais_a3f5ad8b10ce4adcd5e0701ca18b3d10d}\label{classPais_a3f5ad8b10ce4adcd5e0701ca18b3d10d}} 
+\index{Pais@{Pais}!inserir\+\_\+municipi@{inserir\+\_\+municipi}}
+\index{inserir\+\_\+municipi@{inserir\+\_\+municipi}!Pais@{Pais}}
+\subsubsection{\texorpdfstring{inserir\+\_\+municipi()}{inserir\_municipi()}}
+{\footnotesize\ttfamily void Pais\+::inserir\+\_\+municipi (\begin{DoxyParamCaption}\item[{const \hyperlink{classMunicipi}{Municipi} \&}]{m }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+afegeix un \hyperlink{classMunicipi}{Municipi} al País 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPais_a246084dd38da8773d7beb428af235234}\label{classPais_a246084dd38da8773d7beb428af235234}} 
+\index{Pais@{Pais}!llistar\+\_\+comarques@{llistar\+\_\+comarques}}
+\index{llistar\+\_\+comarques@{llistar\+\_\+comarques}!Pais@{Pais}}
+\subsubsection{\texorpdfstring{llistar\+\_\+comarques()}{llistar\_comarques()}}
+{\footnotesize\ttfamily void Pais\+::llistar\+\_\+comarques (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+llista les comarques que te el pais 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPais_a21a52a69fa3a93474ba9c63caab0772a}\label{classPais_a21a52a69fa3a93474ba9c63caab0772a}} 
+\index{Pais@{Pais}!mostrar\+\_\+info\+\_\+municipi@{mostrar\+\_\+info\+\_\+municipi}}
+\index{mostrar\+\_\+info\+\_\+municipi@{mostrar\+\_\+info\+\_\+municipi}!Pais@{Pais}}
+\subsubsection{\texorpdfstring{mostrar\+\_\+info\+\_\+municipi()}{mostrar\_info\_municipi()}}
+{\footnotesize\ttfamily void Pais\+::mostrar\+\_\+info\+\_\+municipi (\begin{DoxyParamCaption}\item[{const string \&}]{nom\+\_\+municipi }\end{DoxyParamCaption})}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+mostra la informació del municipi en el cas que existeixi. Si no existeix mostra un missatge indicant-\/ho. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPais_a67169ad4c8069867327eac695462f89c}\label{classPais_a67169ad4c8069867327eac695462f89c}} 
+\index{Pais@{Pais}!nombre\+\_\+comarques@{nombre\+\_\+comarques}}
+\index{nombre\+\_\+comarques@{nombre\+\_\+comarques}!Pais@{Pais}}
+\subsubsection{\texorpdfstring{nombre\+\_\+comarques()}{nombre\_comarques()}}
+{\footnotesize\ttfamily int Pais\+::nombre\+\_\+comarques (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna el nombre de comarques que té el pais 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPais_af640c7bb35f0fa4799c41ae7e4835cb5}\label{classPais_af640c7bb35f0fa4799c41ae7e4835cb5}} 
+\index{Pais@{Pais}!poblacio@{poblacio}}
+\index{poblacio@{poblacio}!Pais@{Pais}}
+\subsubsection{\texorpdfstring{poblacio()}{poblacio()}}
+{\footnotesize\ttfamily int Pais\+::poblacio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyPrecond}{Precondition}
+cert 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+retorna la poblacio total del pais 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pais.\+h\item 
+pais.\+cpp\end{DoxyCompactItemize}
