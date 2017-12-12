@@ -1,30 +1,34 @@
-//
-// Created by amat on 1/11/17.
-//
-
 #ifndef P1_VEHICLE_H
 #define P1_VEHICLE_H
 
 #include <iostream>
 
-using namespace std;
-
-class vehicle
+/**
+* @brief Classe que representa un %Vehicle genèric
+*/
+class Vehicle
 {
-
 public:
-    /// @pre --
-    /// @post constructor per defecte del vehicle
-    vehicle() = default;
+    /// @pre Cert
+    /// @post constructor per defecte del %vehicle
+    Vehicle() = default;
 
-    /// @pre --
-    /// @post constructor del vehicle donada una matrícula
-    vehicle(const string& matricula);
+    /// @pre Cert
+    /// @post constructor del %vehicle donada una matrícula
+    explicit Vehicle (std::string matricula) : _matricula (std::move(matricula)) {}
+
+    /// @pre Cert
+    /// @post mètode abstracte que retorna el color del %vehicle
+    virtual std::string color() const {};
+
+    /// @pre Cert
+    /// @post mètode abstracte que retorna la matrícula del %vehicle
+    virtual std::string matricula() const;
 
 protected:
-    string _matricula;
+
+    std::string _matricula;
 
 };
-
 
 #endif //P1_VEHICLE_H

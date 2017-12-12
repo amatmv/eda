@@ -1,0 +1,5 @@
+<map id="mostrar_vehicles_per_hora" name="mostrar_vehicles_per_hora">
+<area shape="rect" id="node2" href="$struct_ordinador_1_1data.html#a9f798127c46d09c2a077ff99dc979597" title="Ordinador::data::to\l_string" alt="" coords="257,5,395,47"/>
+<area shape="rect" id="node4" href="$class_ordinador.html#ab51f0ed3e9c509993d8bb28d5e4e975f" title="Ordinador::vehiclesHora" alt="" coords="241,71,411,98"/>
+<area shape="rect" id="node3" href="$struct_ordinador_1_1instant__temporal.html#af72948f0661f32da66362d2191396eee" title="Ordinador::instant\l_temporal::instant_temporal" alt="" coords="459,5,655,47"/>
+</map>

@@ -1,7 +1,3 @@
-//
-// Created by amat on 1/11/17.
-//
-
 #ifndef P1_ORDINADOR_H
 #define P1_ORDINADOR_H
 
@@ -10,26 +6,38 @@
 #include <list>
 #include <vector>
 #include <map>
-#include "cotxe.h"
+#include <memory>
+#include <algorithm>
+#include "Cotxe.h"
+#include "Vehicle.h"
+#include "Moto.h"
 
-class ordinador
+/**
+* @brief Classe que representa un ordinador monoplaca que recopila informació sobre els vehicles que ha registrat
+* un radar (fictíci) i n'emmagatzema la informació per a poder consultar-la.
+*/
+class Ordinador
 {
 public:
 
-    typedef unsigned int nat;
-    typedef short thora;
-    typedef short tminut;
-    typedef short tsegon;
+    /* ---- Definició de tipus interns de la classe Ordinador ---- */
+
+    typedef unsigned int    natural;
+    typedef float           velocitat;
+    typedef short           thora;
+    typedef short           tminut;
+    typedef short           tsegon;
 
     struct data
     {
         data () = default;
-        explicit data (const string& d);
+        explicit data (const std::string& d);
 
         short dia;
         short mes;
         short any;
 
+        std::string to_string() const;
         bool operator== (const data &d) const;
         bool operator< (const data &d) const;
     };
@@ -40,55 +48,81 @@ public:
 
         /// @pre la cadena h ha de tenir el format HH:MM:SS
         /// @post construeix un instant temporal a partir de la cadena h
-        explicit instant_temporal(const string& h);
+        explicit instant_temporal(const std::string& h);
 
-        short hora;
-        short minut;
-        short segon;
+        thora   hora;
+        tminut  minut;
+        tsegon  segon;
     };
 
     /**
-     * @brief   Struct que representa la informació que queda emmagatzemada per a cada
+     * @brief   Tupla que representa la informació que queda emmagatzemada per a cada
      *          observació del radar.
      *          Aquesta informació es classifica en l'ordinador en una estructura
      *          de dades especialitzada.
      **/
     struct registre
     {
-        registre (const string &tv, const float& v, const string &c,
-                  const string &m, const ordinador::data &d,
-                  const ordinador::instant_temporal &i);
 
         registre () = default;
 
-        string r_tipus_vehicle;
-        string r_color;
-        string r_matricula;
-        float r_velocitat;
-        ordinador::data r_data;
-        ordinador::instant_temporal r_instant;
+        explicit registre(std::string tipus_vehicle, const Ordinador::velocitat &velocitat, std::string color,
+                          std::string matricula, const Ordinador::data &data, const instant_temporal &hora);
+
+        std::string                 r_tipus_vehicle;
+        std::string                 r_color;
+        std::string                 r_matricula;
+        Ordinador::velocitat        r_velocitat;
+        Ordinador::data             r_data;
+        Ordinador::instant_temporal r_instant;
 
     };
 
+    /**
+     * @brief   Tuple que guarda la informació d'una %multa.
+     **/
+    struct multa
+    {
+        std::string             matricula;
+        Ordinador::velocitat    velocitat;
+        thora                   hora;
+        tminut                  minut;
+        tsegon                  segon;
 
-    /// @pre --
-    /// @post constructor per defecte
-    ordinador() = default;
+        explicit multa(const std::string &matricula, Ordinador::velocitat velocitat, thora hora, tminut minut, tsegon segon);
+    };
 
-    /// @pre --
-    /// @post retorna una llista amb els cotxes que han passat una data i una hora determinada
-    list<cotxe> llista_vehicles_per_hora (const ordinador::data& d, short h) const;
+    /// @pre Cert
+    /// @post constructor per defecte de %ordinador
+    Ordinador() = default;
 
     /// @pre  0 <= h <= 23
     /// @post retorna el nombre de vehicles registrats el dia  d  en
     ///       l’interval horari h:00:00 - h:59:59
-    nat vehicles_hora (const ordinador::data& d, thora h) const;
+    natural vehiclesHora (const Ordinador::data& d, thora h) const;
 
-    /// @pre  ---
+    /// @pre  Cert
     /// @post retorna les hora del dia en que la velocitat mitjana de
     ///       cotxes i motos es mes elevada, considerant tots els dies
     ///       (una llista per si hi ha empat; ordenada creixentment)
-    list<thora> horaMaxVelCotxesiMotos () const;
+    std::list<thora> horaMaxVelCotxesiMotos () const;
+
+    /// @pre  Cert
+    /// @post retorna un parell de llistes, la primera amb els dies que
+    ///       hi ha hagut mes transit, i la segona amb els dies que n’hi
+    ///       ha hagut menys; les dues llistes ordenades per data
+    std::pair< std::list<data>, std::list<data> > maxMinVehicles() const;
+
+    /// @pre Cert
+    /// @post retorna el color dels cotxes que corren mes en mitjana
+    ///       (una llista per si hi ha empat; ordenada alfabeticament)
+    std::list<std::string> colorCotxesMesRapids() const;
+
+    /// @pre Cert
+    /// @post retorna una llista amb la matricula, velocitat i instant
+    ///       de pas dels vehicles que el dia d han superat la
+    ///       velocitat v (ordenada per matricula)
+    std::list<Ordinador::multa> multes(const Ordinador::data& d, const Ordinador::velocitat& v) const;
 
     /// @pre r és un registre no buit
     /// @post emmagatzema el registre d'un vehicle a l'ordinador
@@ -96,21 +130,34 @@ public:
 
 private:
 
-    /// @pre r és un registre no buit
-    /// @post emmagatzema el registre d'un cotxe a l'ordinador
-    void registrar_cotxe (const registre& r);
+    /// Estructura que conté tota la informació que recopila l'ordinador i l'emmagatzema per a poder efecturar
+    /// les consultes que ofereix l'ordinador monoplaca.
+    std::map<
+            Ordinador::data,
+            std::vector<
+                    std::list<
+                            std::pair<
+                                    instant_temporal,
+                                    std::pair<
+                                            Vehicle*,
+                                            velocitat>>>>> _info_vehicles;
 
-    /// @pre r és un registre no buit
-    /// @post emmagatzema el registre d'una moto a l'ordinador
-    void registrar_moto (const registre& r);
+    /// @pre Cert
+    /// @post retorna el resultat de comparar els dos registres %a i %b segons els criteris adients
+    static bool comparador_cotxes_velocitat (const std::pair<Ordinador::velocitat, std::string> &a,
+                                               const std::pair<Ordinador::velocitat, std::string> &b);
+    /// @pre Cert
+    /// @post retorna el resultat de comparar els dos registres %a i %b segons els criteris adients
+    static bool comparador_velocitats (const std::pair<Ordinador::velocitat, std::pair<Ordinador::thora, Ordinador::natural>> &a,
+                                         const std::pair<Ordinador::velocitat, std::pair<Ordinador::thora, Ordinador::natural>> &b);
 
-    /// @pre r és un registre no buit
-    /// @post emmagatzema el registre d'un vehicle especial a l'ordinador
-    void registrar_vehicle (const registre& r);
-
-    map<ordinador::data, vector<list<pair<instant_temporal, pair<vehicle, short>>>>> _info_vehicles;
-    map<ordinador::data, vector<list<pair<instant_temporal, pair<cotxe, short>>>>> _info_cotxes;
-
+    /// @pre Cert
+    /// @post retorna el resultat de comparar els dos registres %a i %b segons els criteris adients
+    static bool comparador_cotxes_dia (const std::pair<Ordinador::natural, Ordinador::data> &a,
+                                         const std::pair<Ordinador::natural, Ordinador::data> &b);
+    /// @pre Cert
+    /// @post retorna el resultat de comparar els dos registres %a i %b segons els criteris adients
+    static bool comparador_multes (const multa&a, const multa&b);
 };
 
 

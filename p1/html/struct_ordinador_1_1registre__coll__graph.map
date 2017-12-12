@@ -1,0 +1,4 @@
+<map id="Ordinador::registre" name="Ordinador::registre">
+<area shape="rect" id="node2" href="$struct_ordinador_1_1instant__temporal.html" title="{Ordinador::instant\l_temporal\n|+ hora\l+ minut\l+ segon\l|+ instant_temporal()\l+ instant_temporal()\l}" alt="" coords="5,20,152,156"/>
+<area shape="rect" id="node3" href="$struct_ordinador_1_1data.html" title="{Ordinador::data\n|+ dia\l+ mes\l+ any\l|+ data()\l+ data()\l+ to_string()\l+ operator==()\l+ operator\&lt;()\l}" alt="" coords="176,5,293,171"/>
+</map>

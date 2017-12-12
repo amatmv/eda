@@ -1,0 +1,6 @@
+<map id="mostrar_vehicles_multats_per_dia_i_velocitat" name="mostrar_vehicles_multats_per_dia_i_velocitat">
+<area shape="rect" id="node2" href="$struct_ordinador_1_1data.html#a9f798127c46d09c2a077ff99dc979597" title="Ordinador::data::to\l_string" alt="" coords="233,8,371,49"/>
+<area shape="rect" id="node4" href="$class_ordinador.html#af0bd6878ac99ee5e3ae3d2d166f98cc9" title="Ordinador::multes" alt="" coords="237,75,367,102"/>
+<area shape="rect" id="node3" href="$struct_ordinador_1_1instant__temporal.html#af72948f0661f32da66362d2191396eee" title="Ordinador::instant\l_temporal::instant_temporal" alt="" coords="419,5,615,47"/>
+<area shape="rect" id="node5" href="$class_ordinador.html#ad54eb063d91660bb3c896bfce24e5661" title="Ordinador::comparador\l_multes" alt="" coords="435,71,598,112"/>
+</map>

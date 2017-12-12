@@ -1,0 +1,20 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$main_8cpp.html#aad715d67883ed510f245be6f2011f46f" title="llegir_dades_de_teclat" alt="" coords="117,8,279,35"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae7a7accee23750a72c84cfc8b34a6de6" title="mostrar_vehicles_per_hora" alt="" coords="104,129,292,156"/>
+<area shape="rect" id="node8" href="$main_8cpp.html#afca03c2af8b0c470cfc1c0134b2e7318" title="mostrar_hora_velocitat\l_maxima" alt="" coords="115,61,281,102"/>
+<area shape="rect" id="node11" href="$main_8cpp.html#a8ab9d6deafd9e854421993567199461f" title="mostrar_dies_mes_menys\l_vehicles" alt="" coords="109,251,287,293"/>
+<area shape="rect" id="node14" href="$main_8cpp.html#ae91c9e1276de7bd1fd0bfbc8bd01ceda" title="mostrar_color_cotxes\l_mes_rapids" alt="" coords="120,329,276,370"/>
+<area shape="rect" id="node17" href="$main_8cpp.html#a15d072e8fcd13493cf6a3c5bdd12add7" title="mostrar_vehicles_multats\l_per_dia_i_velocitat" alt="" coords="108,181,288,222"/>
+<area shape="rect" id="node3" href="$class_ordinador.html#afaab67c1982887b88ab18edbb5142bb2" title="Ordinador::registrar" alt="" coords="373,5,516,32"/>
+<area shape="rect" id="node5" href="$struct_ordinador_1_1data.html#a9f798127c46d09c2a077ff99dc979597" title="Ordinador::data::to\l_string" alt="" coords="376,174,513,215"/>
+<area shape="rect" id="node7" href="$class_ordinador.html#ab51f0ed3e9c509993d8bb28d5e4e975f" title="Ordinador::vehiclesHora" alt="" coords="360,123,529,149"/>
+<area shape="rect" id="node6" href="$struct_ordinador_1_1instant__temporal.html#af72948f0661f32da66362d2191396eee" title="Ordinador::instant\l_temporal::instant_temporal" alt="" coords="597,163,793,205"/>
+<area shape="rect" id="node9" href="$class_ordinador.html#a921b36085f4259674b70b764b53a4ef0" title="Ordinador::horaMaxVelCotxesi\lMotos" alt="" coords="340,57,549,98"/>
+<area shape="rect" id="node10" href="$class_ordinador.html#a2cd8f762a990dff4599d8d9fd9a57496" title="Ordinador::comparador\l_velocitats" alt="" coords="614,57,777,98"/>
+<area shape="rect" id="node12" href="$class_ordinador.html#a9b8bbf994a9b0f8ffde31cde8bbb497b" title="Ordinador::maxMinVehicles" alt="" coords="351,297,538,324"/>
+<area shape="rect" id="node13" href="$class_ordinador.html#a30e9764a5226469eb22a37187f421cfc" title="Ordinador::comparador\l_cotxes_dia" alt="" coords="614,294,777,335"/>
+<area shape="rect" id="node15" href="$class_ordinador.html#a2897e2cb0dce0ed3b16e58790d539c78" title="Ordinador::colorCotxesMes\lRapids" alt="" coords="349,351,540,393"/>
+<area shape="rect" id="node16" href="$class_ordinador.html#a3559e3feec2495640093cad031743fc5" title="Ordinador::comparador\l_cotxes_velocitat" alt="" coords="614,359,777,401"/>
+<area shape="rect" id="node18" href="$class_ordinador.html#af0bd6878ac99ee5e3ae3d2d166f98cc9" title="Ordinador::multes" alt="" coords="379,240,510,267"/>
+<area shape="rect" id="node19" href="$class_ordinador.html#ad54eb063d91660bb3c896bfce24e5661" title="Ordinador::comparador\l_multes" alt="" coords="614,229,777,270"/>
+</map>

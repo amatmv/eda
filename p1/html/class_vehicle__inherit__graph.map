@@ -1,0 +1,4 @@
+<map id="Vehicle" name="Vehicle">
+<area shape="rect" id="node2" href="$class_cotxe.html" title="Implementació de Vehicle que representa un Cotxe. " alt="" coords="5,175,104,311"/>
+<area shape="rect" id="node3" href="$class_moto.html" title="Implementació de Vehicle que representa una moto. " alt="" coords="128,189,227,296"/>
+</map>

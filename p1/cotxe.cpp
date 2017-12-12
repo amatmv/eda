@@ -1,10 +1,14 @@
 // Amat Martínez Vilà
 // u1939654
-//
+// Pràctica ED
 
-#include "cotxe.h"
+#include "Cotxe.h"
 
-cotxe::cotxe(const string &matricula, const string &color) : vehicle(matricula)
+std::string Cotxe::color() const
 {
-    _color = color;
+    return _color;
+}
+
+std::string Cotxe::matricula() const {
+    return _matricula;
 }

@@ -1,10 +1,10 @@
 // Amat Martínez Vilà
 // u1939654
-//
+// Pràctica ED
 
-#include "vehicle.h"
+#include "Vehicle.h"
 
-vehicle::vehicle(const string &matricula)
+std::string Vehicle::matricula() const
 {
-    _matricula = matricula;
+    return _matricula;
 }

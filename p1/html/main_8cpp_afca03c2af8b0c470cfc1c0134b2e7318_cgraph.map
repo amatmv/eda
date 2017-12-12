@@ -1,0 +1,4 @@
+<map id="mostrar_hora_velocitat_maxima" name="mostrar_hora_velocitat_maxima">
+<area shape="rect" id="node2" href="$class_ordinador.html#a921b36085f4259674b70b764b53a4ef0" title="Ordinador::horaMaxVelCotxesi\lMotos" alt="" coords="220,5,429,47"/>
+<area shape="rect" id="node3" href="$class_ordinador.html#a2cd8f762a990dff4599d8d9fd9a57496" title="Ordinador::comparador\l_velocitats" alt="" coords="477,5,640,47"/>
+</map>
