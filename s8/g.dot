@@ -1,0 +1,16 @@
+strict graph {
+	node [style=filled]
+	1 [color=indigo]
+	2 [color=indigo]
+	3 [color=cyan]
+	4 [color=darkred]
+	5 [color=cyan]
+	6 [color=darkred]
+	1 -- 5
+	1 -- 6
+	2 -- 3
+	2 -- 4
+	3 -- 4
+	4 -- 5
+	5 -- 6
+}
