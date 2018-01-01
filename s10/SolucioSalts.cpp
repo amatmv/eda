@@ -1,6 +1,6 @@
-//
-// Created by amat on 12/12/17.
-//
+// Amat Martínez Vilà
+// u1939654
+// Sessió 10
 
 #include <climits>
 #include "SolucioSalts.h"
@@ -21,13 +21,13 @@ SolucioSalts::SolucioSalts(const std::vector<std::vector<int>>& m)
 
 bool SolucioSalts::acceptable(const CandidatsSalts &iCan) const
 {
-    posicio actual = iCan.actual ();
+    posicio actual = iCan.actual();
     return es_posicio_valida (actual) && !es_posicio_visitada (actual);
 }
 
 void SolucioSalts::anotar(const CandidatsSalts &iCan)
 {
-    posicio actual = iCan.actual ();
+    posicio actual = iCan.actual();
     _visitats[actual.y][actual.x] = true;
     _salts.emplace_back(CandidatsSalts::posicio(actual.x, actual.y));
 }
@@ -78,18 +78,12 @@ SolucioSalts& SolucioSalts::operator=(const SolucioSalts &sol)
 
 bool SolucioSalts::esMillor(const SolucioSalts &optima) const
 {
-    int distancia_optima = optima._salts.empty() ? INT_MAX : optima._salts.size();
+    auto distancia_optima = optima._salts.empty() ? INT_MAX : optima._salts.size();
     return _salts.size() < distancia_optima;
 }
 
-bool SolucioSalts::esPotMillorar(const SolucioSalts &sol, const CandidatsSalts& iCan) const
+bool SolucioSalts::esPotMillorar(const SolucioSalts &sol) const
 {
-    int distancia_a_origen_actual = posicio(1,1)-_salts.back();
-    int distancia_a_origen_optim = posicio(1,1)-sol._salts.back();
-    if (distancia_a_origen_actual < 0)
-        distancia_a_origen_actual = 0;
-    if (distancia_a_origen_optim < 0)
-        distancia_a_origen_optim = 0;
-    return true;
+    return esMillor(sol);
 }
 

@@ -1,6 +1,6 @@
-//
-// Created by amat on 12/12/17.
-//
+// Amat Martínez Vilà
+// u1939654
+// Sessió 10
 
 #include "SolucionadorSalts.h"
 
@@ -20,14 +20,11 @@ void SolucionadorSalts::calcular_solucio(const CandidatsSalts::posicio& act)
     CandidatsSalts iCan = _sol_actual.inicialitzar_conjunt_candidats(act);
     while (!iCan.es_fi())
     {
-        if (_sol_actual.acceptable(iCan) &&
-                _sol_actual.esPotMillorar(_sol_optima, iCan))
+        if (_sol_actual.acceptable(iCan) && _sol_actual.esPotMillorar(_sol_optima))
         {
             _sol_actual.anotar(iCan);
             if (!_sol_actual.completa())
-            {
                 calcular_solucio(iCan.actual());
-            }
             else
             {
                 if (_sol_actual.esMillor(_sol_optima))

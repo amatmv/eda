@@ -1,6 +1,7 @@
 // Amat Martínez Vilà
 // u1939654
-// Sessió 9
+// Sessió 10
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -9,11 +10,23 @@
 #include "SolucioSalts.h"
 #include "SolucionadorSalts.h"
 
+/**
+ * @pre: %tamany > 0 && %v_maxim > 0
+ * @post: Retorna una matriu generada aleatòriament de tamany x tamany on cada element té un valor màxim de v_maxim
+ */
 std::vector<std::vector<int>> generar_tauler_aleatori(int tamany, int v_maxim);
 
+/**
+ * @pre: filename és el nom d'un fitxer existent
+ * @post: Retorna la matriu llegida de fitxer
+ */
 std::vector<std::vector<int>> llegir_matriu_de_fitxer(char *filename);
 
-void mostrar_matriu(const std::vector<std::vector<int>> &matriu, const std::vector<int>& digits);
+/**
+ * @pre: --
+ * @post: Mostra la %matriu per pantalla
+ */
+void mostrar_matriu(const std::vector<std::vector<int>> &matriu);
 
 int main(int argn, char ** argv)
 {
@@ -49,27 +62,24 @@ int main(int argn, char ** argv)
     solucionador.trobar_una_solucio();
     t2 = time(NULL);
     std::list<SolucioSalts::posicio> cami = solucionador.cami();
-
+    std::cout << "Matriu llegida/generada:" << std::endl;
+    mostrar_matriu(matriu);
     if (!cami.empty())
     {
-        std::vector<std::vector<int>> matriu_cami(n+1, std::vector<int>(n+1));
-        std::vector<int> digits(n+1, 0);
+        std::vector<std::vector<int>> matriu_cami(n, std::vector<int>(n));
 
         int salts = 1;
         matriu_cami[1][1] = salts++;
 
         std::cout << "Sol·lució trobada en " << difftime(t2,t1) << " segons." << std::endl;
-        int n_actual;
+        std::cout << "(1,1)";
         for (auto &it_salts : cami)
         {
             std::cout << "(" << it_salts.x << "," << it_salts.y << ")";
             matriu_cami[it_salts.x][it_salts.y] = salts++;
-
-            n_actual = matriu_cami[it_salts.x][it_salts.y];
-            for(; n_actual > 0; n_actual/=10, digits[it_salts.x]++);
         }
         std::cout << std::endl << std::endl;
-        mostrar_matriu(matriu_cami, digits);
+        mostrar_matriu(matriu_cami);
     }
     return 0;
 }
@@ -95,25 +105,24 @@ std::vector<std::vector<int>> generar_tauler_aleatori(int tamany, int v_maxim)
     std::vector<std::vector<int>> v(tamany+1, std::vector<int>(tamany+1));
     for (int i = 1; i <= tamany; i++)
         for (int j = 1; j <= tamany; j++)
-            v[i][j] = rand() % (v_maxim-1) + 1;
+        {
+            int max = v_maxim == 1 ? 2 : v_maxim;
+            v[i][j] = rand() % (max-1) + 1;
+        }
     return v;
 }
 
-void mostrar_matriu(const std::vector<std::vector<int>> &matriu, const std::vector<int> &digits)
+void mostrar_matriu(const std::vector<std::vector<int>> &matriu)
 {
     auto tamany = matriu.size();
-    for (int i = 1; i <= tamany; ++i)
+    for (int i = 1; i < tamany; i++)
     {
-        for (int j = 1; j <= tamany; ++j)
+        for (int j = 1; j < tamany; j++)
         {
             if (matriu[i][j] != 0)
                 std::cout << matriu[i][j];
             else
-            {
-                std::cout << "·";
-                for (int k = 0; i < digits[j]; k++)
-                    std::cout << " ";
-            }
+                std::cout << ".";
             std::cout << " ";
         }
         std::cout << std::endl;

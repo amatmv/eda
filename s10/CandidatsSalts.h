@@ -1,7 +1,3 @@
-//
-// Created by amat on 12/12/17.
-//
-
 #ifndef S9_CANDIDATSSALTS_H
 #define S9_CANDIDATSSALTS_H
 
@@ -55,9 +51,9 @@ public:
 
 private:
     const posicio DESPLACAMENTS[4] = {
+            posicio(0,1),
             posicio(0,-1),
             posicio(1,0),
-            posicio(0,1),
             posicio(-1,0),
     };
     int _iCan;

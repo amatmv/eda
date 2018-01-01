@@ -1,6 +1,6 @@
-//
-// Created by amat on 12/12/17.
-//
+// Amat Martínez Vilà
+// u1939654
+// Sessió 10
 
 #include <cmath>
 #include "CandidatsSalts.h"
@@ -27,9 +27,8 @@ bool CandidatsSalts::es_fi() const
 
 void CandidatsSalts::seguent()
 {
-    if (es_fi())
-        throw ("Es l'ultim candidat.");
-    _iCan++;
+    if (!es_fi())
+        _iCan++;
 }
 
 CandidatsSalts::posicio CandidatsSalts::posicio::operator*(const int& n)

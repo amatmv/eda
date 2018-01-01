@@ -1,7 +1,3 @@
-//
-// Created by amat on 12/12/17.
-//
-
 #ifndef S9_SOLUCIONADOR_H
 #define S9_SOLUCIONADOR_H
 

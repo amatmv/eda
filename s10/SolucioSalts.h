@@ -1,7 +1,3 @@
-//
-// Created by amat on 12/12/17.
-//
-
 #ifndef S9_SOLUCIO_H
 #define S9_SOLUCIO_H
 
@@ -45,9 +41,17 @@ public:
      */
     std::list<SolucioSalts::posicio> cami() const;
 
+    /**
+     * @pre: --
+     * @post: Retorna cert si la sol·lució actual és millor que %optima
+     */
     bool esMillor(const SolucioSalts& optima) const;
 
-    bool esPotMillorar(const SolucioSalts &sol, const CandidatsSalts& iCan) const;
+    /**
+     * @pre: --
+     * @post: Retorna cert si la sol·lució actual es pot millorar
+     */
+    bool esPotMillorar(const SolucioSalts &sol) const;
 
     /**
      * @pre: --
@@ -67,6 +71,10 @@ public:
      */
     void desanotar(const CandidatsSalts &iCan);
 
+    /**
+     * @pre: --
+     * @post: Ooerador d'assignació
+     */
     SolucioSalts& operator=(const SolucioSalts& sol);
 
     ~SolucioSalts() = default;
