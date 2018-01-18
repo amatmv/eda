@@ -1,0 +1,6 @@
+<map id="SolucioNadal::acceptable" name="SolucioNadal::acceptable">
+<area shape="rect" id="node2" href="$class_candidats_taula.html#a4a92e06dcc506f585f44ae87c5cdf779" title="CandidatsTaula::actual" alt="" coords="244,5,400,32"/>
+<area shape="rect" id="node3" href="$class_solucio_nadal.html#ac8c9c1003aedc8cb543706f9b862023a" title="SolucioNadal::convidatsVeins" alt="" coords="224,56,420,83"/>
+<area shape="rect" id="node5" href="$class_solucio_nadal.html#a59d3c60b32ff176b6f25024c776a7086" title="SolucioNadal::compatibles" alt="" coords="233,107,411,133"/>
+<area shape="rect" id="node4" href="$class_solucio_nadal.html#a72e43d88488a548f1b6b57cd099f7304" title="SolucioNadal::posicionsVeines" alt="" coords="468,56,671,83"/>
+</map>

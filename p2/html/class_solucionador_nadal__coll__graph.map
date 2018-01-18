@@ -1,0 +1,3 @@
+<map id="SolucionadorNadal" name="SolucionadorNadal">
+<area shape="rect" id="node2" href="$class_solucio_nadal.html" title="{SolucioNadal\n|&#45; _nivell\l&#45; _convidats\l&#45; _max_aversions\l&#45; _taula\l&#45; _n_convidats\l&#45; _aversions\l&#45; _max_aversio\l&#45; _total_aversio\l|+ SolucioNadal()\l+ SolucioNadal()\l+ SolucioNadal()\l+ acceptable()\l+ acceptableOptim()\l+ completa()\l+ esMillor()\l+ esPotMillorar()\l+ inicialitzarConjuntCandidats()\l+ mostrar()\l+ anotar()\l+ desanotar()\l+ operator=()\l&#45; compatibles()\l&#45; construirEstructures()\l&#45; convidatsVeins()\l&#45; posicionsVeines()\l&#45; actualitzarMaximesAversions()\l&#45; actualitzarMaximesAversions\lVeins()\l}" alt="" coords="5,5,215,464"/>
+</map>

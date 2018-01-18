@@ -1,0 +1,16 @@
+<map id="SolucionadorNadal::solucio_minima_aversio" name="SolucionadorNadal::solucio_minima_aversio">
+<area shape="rect" id="node2" href="$class_solucio_nadal.html#af5b888e8c8ea042339719326808f1a55" title="SolucioNadal::inicialitzar\lConjuntCandidats" alt="" coords="223,5,389,47"/>
+<area shape="rect" id="node3" href="$class_candidats_taula.html#a254bcd1101c76f0139b8a100f879e150" title="CandidatsTaula::es_fi" alt="" coords="231,71,381,98"/>
+<area shape="rect" id="node4" href="$class_solucio_nadal.html#a6335edbd0182441392cc3a35b071ae35" title="SolucioNadal::acceptable\lOptim" alt="" coords="221,123,391,164"/>
+<area shape="rect" id="node6" href="$class_solucio_nadal.html#a330055de5c665d180f02833424574587" title="SolucioNadal::esPotMillorar" alt="" coords="215,290,397,317"/>
+<area shape="rect" id="node7" href="$class_solucio_nadal.html#aec57e29e4e5a1a1fa59157f88006ed58" title="SolucioNadal::esMillor" alt="" coords="453,319,605,346"/>
+<area shape="rect" id="node8" href="$class_solucio_nadal.html#a82f7e03934cb631decd38f4906eb615f" title="SolucioNadal::anotar" alt="" coords="235,239,377,266"/>
+<area shape="rect" id="node13" href="$class_solucio_nadal.html#a8d718aaf25613a8c30e08a8ec97ed51a" title="SolucioNadal::completa" alt="" coords="226,391,386,418"/>
+<area shape="rect" id="node14" href="$class_solucio_nadal.html#a9a5c59bcbfed4563a4ca994b50142126" title="SolucioNadal::desanotar" alt="" coords="224,189,388,215"/>
+<area shape="rect" id="node15" href="$class_candidats_taula.html#a6de3a016cbb5ffa42a43ce33513e5b3a" title="CandidatsTaula::seguent" alt="" coords="223,442,389,469"/>
+<area shape="rect" id="node5" href="$class_candidats_taula.html#a4a92e06dcc506f585f44ae87c5cdf779" title="CandidatsTaula::actual" alt="" coords="451,141,607,167"/>
+<area shape="rect" id="node9" href="$class_solucio_nadal.html#a35b192387fc8a2b6311a830957451f99" title="SolucioNadal::actualitzar\lMaximesAversions" alt="" coords="660,251,827,292"/>
+<area shape="rect" id="node12" href="$class_solucio_nadal.html#adf966b6a4d9cd6a7e2332104815e4e0a" title="SolucioNadal::actualitzar\lMaximesAversionsVeins" alt="" coords="445,192,612,233"/>
+<area shape="rect" id="node10" href="$class_solucio_nadal.html#ac8c9c1003aedc8cb543706f9b862023a" title="SolucioNadal::convidatsVeins" alt="" coords="875,254,1071,281"/>
+<area shape="rect" id="node11" href="$class_solucio_nadal.html#a72e43d88488a548f1b6b57cd099f7304" title="SolucioNadal::posicionsVeines" alt="" coords="1119,227,1321,254"/>
+</map>

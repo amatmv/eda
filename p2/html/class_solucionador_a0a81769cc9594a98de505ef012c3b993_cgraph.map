@@ -1,0 +1,9 @@
+<map id="Solucionador::solucionar_voras" name="Solucionador::solucionar_voras">
+<area shape="rect" id="node2" href="$class_solucionador.html#abd33079bbd63340c7686a86b74496a5d" title="Solucionador::voras" alt="" coords="217,107,355,133"/>
+<area shape="rect" id="node3" href="$class_solucio.html#a40880e2440327d2f9b614f3a2bc8402c" title="Solucio::esCompleta" alt="" coords="406,5,549,32"/>
+<area shape="rect" id="node4" href="$class_solucio.html#aec7507a0eb71c6aea1d86f39538121ab" title="Solucio::retNum" alt="" coords="419,56,535,83"/>
+<area shape="rect" id="node5" href="$class_solucio.html#a986a42782f9fd5222433068aec20b36a" title="Solucio::get_nivell" alt="" coords="413,107,541,133"/>
+<area shape="rect" id="node6" href="$class_solucio.html#a010f79d2844ea2246a34373922e6712e" title="Solucio::iniCandVor" alt="" coords="409,157,546,184"/>
+<area shape="rect" id="node7" href="$class_solucio.html#a67fb1cc9c75ebfba4989d60fd4d6eed7" title="Solucio::anotCandVor" alt="" coords="403,208,552,235"/>
+<area shape="rect" id="node8" href="$class_candidats.html#a2837f2cca56fc073ef622a1fa123628c" title="Candidats::Actual" alt="" coords="600,208,727,235"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Solucionador::trobarUnaSolucio" name="Solucionador::trobarUnaSolucio">
+<area shape="rect" id="node2" href="$class_solucio.html#ac01b153cd998a4e06a5c62c3e6c40112" title="Solucio::inicialitzarCandidats" alt="" coords="259,5,449,32"/>
+<area shape="rect" id="node3" href="$class_candidats.html#af170121012437e8e4cc430facdd5c5fc" title="Candidats::esFi" alt="" coords="503,81,618,108"/>
+<area shape="rect" id="node4" href="$class_solucio.html#afd277eb2d1a90128c7ac9b4ed05a00bb" title="Solucio::Acceptable" alt="" coords="285,157,423,184"/>
+<area shape="rect" id="node6" href="$class_solucio.html#ad1bf1b5787fe922042569e88cece8b5c" title="Solucio::anotarCandidat" alt="" coords="273,259,435,285"/>
+<area shape="rect" id="node7" href="$class_solucio.html#a40880e2440327d2f9b614f3a2bc8402c" title="Solucio::esCompleta" alt="" coords="283,208,425,235"/>
+<area shape="rect" id="node8" href="$class_solucio.html#a54e2943934d9bafa4d49a512e9c68025" title="Solucio::desAnotarCandidat" alt="" coords="262,309,446,336"/>
+<area shape="rect" id="node9" href="$class_candidats.html#afd756250ad98135ef7988ab84e16e050" title="Candidats::seguent" alt="" coords="287,56,421,83"/>
+<area shape="rect" id="node5" href="$class_candidats.html#a2837f2cca56fc073ef622a1fa123628c" title="Candidats::Actual" alt="" coords="497,259,624,285"/>
+</map>

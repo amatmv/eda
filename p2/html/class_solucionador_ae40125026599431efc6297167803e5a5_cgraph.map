@@ -1,0 +1,15 @@
+<map id="Solucionador::solucionar_millor" name="Solucionador::solucionar_millor">
+<area shape="rect" id="node2" href="$class_solucionador.html#a2b180ab4625187aec6c430a955b8cd53" title="Solucionador::trobarMillor\lSolucio" alt="" coords="217,251,387,293"/>
+<area shape="rect" id="node3" href="$class_solucio.html#ac01b153cd998a4e06a5c62c3e6c40112" title="Solucio::inicialitzarCandidats" alt="" coords="435,5,625,32"/>
+<area shape="rect" id="node4" href="$class_candidats.html#af170121012437e8e4cc430facdd5c5fc" title="Candidats::esFi" alt="" coords="679,487,794,513"/>
+<area shape="rect" id="node5" href="$class_solucio.html#a58c70510fd0d7a8970c5f0f7322cb170" title="Solucio::Acceptable_opt" alt="" coords="449,208,611,235"/>
+<area shape="rect" id="node7" href="$class_solucio.html#a867a49ebc9d34496d129783e660ee4fa" title="Solucio::potSerMillor" alt="" coords="459,157,601,184"/>
+<area shape="rect" id="node8" href="$class_solucio.html#ad1bf1b5787fe922042569e88cece8b5c" title="Solucio::anotarCandidat" alt="" coords="449,56,611,83"/>
+<area shape="rect" id="node9" href="$class_solucio.html#a40880e2440327d2f9b614f3a2bc8402c" title="Solucio::esCompleta" alt="" coords="459,259,601,285"/>
+<area shape="rect" id="node10" href="$class_solucio.html#a5240dd80ed1e49cfe6f3065cc515789a" title="Solucio::esMillor" alt="" coords="471,309,589,336"/>
+<area shape="rect" id="node11" href="$class_solucio.html#a7e2709b42ee66126924a9cb856c12fb8" title="Solucio::set_avers" alt="" coords="465,360,595,387"/>
+<area shape="rect" id="node12" href="$class_solucio.html#a5926c9180bd8fef871f86d6615cb1034" title="Solucio::get_avers" alt="" coords="465,411,595,437"/>
+<area shape="rect" id="node13" href="$class_solucio.html#a54e2943934d9bafa4d49a512e9c68025" title="Solucio::desAnotarCandidat" alt="" coords="438,107,622,133"/>
+<area shape="rect" id="node14" href="$class_candidats.html#afd756250ad98135ef7988ab84e16e050" title="Candidats::seguent" alt="" coords="463,461,597,488"/>
+<area shape="rect" id="node6" href="$class_candidats.html#a2837f2cca56fc073ef622a1fa123628c" title="Candidats::Actual" alt="" coords="673,107,800,133"/>
+</map>

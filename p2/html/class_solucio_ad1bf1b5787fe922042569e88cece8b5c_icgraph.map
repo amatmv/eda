@@ -1,0 +1,9 @@
+<map id="Solucio::anotarCandidat" name="Solucio::anotarCandidat">
+<area shape="rect" id="node2" href="$class_solucionador.html#acaa88d36bcfbc8ccec075a07cc0b103e" title="Solucionador::trobarUnaSolucio" alt="" coords="215,5,420,32"/>
+<area shape="rect" id="node6" href="$class_solucionador.html#a2b180ab4625187aec6c430a955b8cd53" title="Solucionador::trobarMillor\lSolucio" alt="" coords="233,57,402,98"/>
+<area shape="rect" id="node3" href="$class_solucionador.html#a6c3b8baf0595cd6707d8e0233a381f21" title="Solucionador::solucionar" alt="" coords="468,5,632,32"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a4a229e89f24ed0a3865fdfde1fc21142" title="trobaUnaSolucio" alt="" coords="683,8,802,35"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="853,35,904,61"/>
+<area shape="rect" id="node7" href="$class_solucionador.html#ae40125026599431efc6297167803e5a5" title="Solucionador::solucionar\l_millor" alt="" coords="468,57,632,98"/>
+<area shape="rect" id="node8" href="$main_8cpp.html#a775e618685583c907660877e12e97553" title="trobaMillorSolucio" alt="" coords="680,60,805,87"/>
+</map>
